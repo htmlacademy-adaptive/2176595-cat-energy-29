@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Darina Smorkalova](https://up.htmlacademy.ru/adaptive/29/user/2176595).
-* Наставник: `Анна Лисененкова`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
