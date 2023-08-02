@@ -10,31 +10,31 @@
         <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи">
         </a>
         <p class="company-name">Cat Energy</p>
-        <nav class="main-nav">
-          <button class="main-nav__toogle" type="button">
+        <nav class="navigation">
+          <button class="navigation__toogle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-<ul class="main-nav__list site-list">
-<li clas="site-list__item">
-  <a href="index.html">
-    Главная
-    </a>
-  </li>
-  <li clas="site-list__item">
-    <a href="catalog.html">
-      Каталог продукции
-    </a>
-  </li>
-  <li clas="site-list__item">
-    <a href="form.html">
-      Подбор программы
+<ul class="navigation__list">
+  <li class="navigation__item">
+    <a class="navigation__link" href="index.html">
+      Главная
       </a>
-  </li>
-  </ul>
+    </li>
+    <li clas="navigation__item">
+      <a class="navigation__link" href="catalog.html">
+        Каталог продукции
+      </a>
+    </li>
+    <li class="navigation__item">
+      <a class="navigation__link" href="form.html">
+        Подбор программы
+        </a>
+    </li>
+    </ul>
           </nav>
     </header>
 
-<main class="form-container ">
+<main class="form-container">
 <h1 class="form-container__title">Подбор программы</h1>
 <p class="form-container__description">Заполните анкету, и мы подберем
   программу питания для вашего кота</p>
@@ -52,16 +52,16 @@
     <input class="input__control" id="age" type="number" placeholder="7">
       </div>
       <fieldset class="checkbox">
-        <ul class="checkbox-inner__list">
-          <li class="ckeckbox__inner_item">
+        <ul class="checkbox__list">
+          <li class="ckeckbox_item">
               <input type="radio" id="reduce-weight" name="reduce-weight" checked>
               <label class="checkbox__label" for="reduce-weight">Похудение</label>
             </li>
-            <li class="ckeckbox__inner_item">
+            <li class="ckeckbox__item">
               <input type="radio" id="get-fat" name="reduce-weight">
               <label class="checkbox__label" for="get-fat">Набор массы</label>
             </li>
-            <li class="ckeckbox__inner_item">
+            <li class="ckeckbox__item">
               <input type="radio" id="reduce-weight" name="not-stated">
               <label class="checkbox__label" for="not-stated">Не знаю (нужен ваш совет)</label>
             </li>
@@ -105,40 +105,41 @@
           </li>
           </ul>
       </fieldset>
-      <button class="checkbox__button" type="button">
+      <button class="checkbox__button button" type="button">
         Отправить заявку
         </button>
         <p class="form__comment"> * — Обязательные поля </p>
   </form>
-  </main>
+  <section class="contacts">
+    <div class="contacts__adress adress">
+    <h2 class="visually-hidden">Адрес компании</h2>
+    <p class="adress__text">Приглашаем к сотрудничеству дилеров!
+      </p>
+      <p class="adress__street">ул. Большая Конюшенная, д. 19/8 <span class="adress__city">Санкт-Петербург</span></p>
+    </section>
+</main>
+<footer class="main-footer">
 
-    <footer class="main-footer">
-      <section class="contacts">
-        <h2 class="visually-hidden">Адрес компании</h2>
-        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!
-          </p>
-          <p class="adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </section>
-        <p class="company-name">Cat Energy</p>
-        <section class="social">
-          <ul class="social__list">
+    <p class="company-name">Cat Energy</p>
+    <section class="social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href=""> </a>
+          <span class="visually-hidden">Вконтакте</span>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--Youtube" href=""> </a>
+            <span class="visually-hidden">Youtube</span>
+            </li>
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href=""> </a>
-              <span class="visually-hidden">Вконтакте</span>
+              <a class="social__link social__link--telegramm" href=""> </a>
+              <span class="visually-hidden">Телеграмм</span>
               </li>
-              <li class="social__item">
-                <a class="social__link social__link--Youtube" href=""> </a>
-                <span class="visually-hidden">Youtube</span>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--telegramm" href=""> </a>
-                  <span class="visually-hidden">Телеграмм</span>
-                  </li>
-            </ul>
-        </section>
-        <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="">HTML Academy</a>
-        </div>
-    </footer>
-    </body>
-    </html>
+        </ul>
+    </section>
+    <div class="main-footer__copyright copyright">
+      <a class="copyright__link" href="">HTML Academy</a>
+    </div>
+</footer>
+</body>
+</html>
