@@ -5,33 +5,37 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="#">
+      <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи">
         </a>
         <p class="company-name">Cat Energy</p>
-        <nav class="main-nav">
-          <button class="main-nav__toogle" type="button">
+        <nav class="navigation">
+          <button class="navigation__toogle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-<ul class="main-nav__list site-list">
-<li clas="site-list__item">
-  <a href="index.html">
+          <nav class="navigation">
+          <button class="navigation__toogle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+<ul class="navigation__list">
+<li class="navigation__item">
+  <a class="navigation__link" href="index.html">
     Главная
     </a>
   </li>
-  <li clas="site-list__item">
-    <a href="catalog.html">
+  <li clas="navigation__item">
+    <a class="navigation__link" href="catalog.html">
       Каталог продукции
     </a>
   </li>
-  <li clas="site-list__item">
-    <a href="form.html">
+  <li class="navigation__item">
+    <a class="navigation__link" href="form.html">
       Подбор программы
       </a>
   </li>
   </ul>
           </nav>
-      </header>
+    </header>
       <main class="main-container">
         <section class="hero">
           <h1 class="hero__main-heading">Функциональное
@@ -43,23 +47,24 @@
             <a class="hero__form-link" href="form.html">Подобрать программу
               </a>
           </section>
-          <section class="features">
+          <section class="nutrition-programms">
 <h2 class="visually-hidden">
   Программы питания для котов: похудение и набор массы
 </h2>
-<ul class="features__list">
-  <li class="features__item features__item--slim">
-    <h3 class="features__title">Похудение</h3>
-    <p class="features__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-    <a class="features__link" href="#">Каталог SLIM</a>
+<ul class="nutrition-programms__list nutrition-programm nutrition--programm-slim">
+  <li class="nutrition__programm nutrition-programm--slim">
+    <h3 class="nutrition-programm__title">Похудение</h3>
+    <p class="nutrition-programm__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+    <a class="nutrition-programm__link" href="#">Каталог SLIM</a>
     </li>
-    <li class="features__item features__item--fat">
-      <h3 class="features__title">Набор массы</h3>
-      <p class="features__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-      <a class="programms__link" href="#">Каталог PRO</a>
+    <li class="nutrition-programms__list nutrition-programm nutrition--programm-pro">
+      <h3 class="nutrition-programm__title">Набор массы</h3>
+      <p class="nutrition-programm__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+      <a class="nutrition-programm__link" href="#">Каталог PRO</a>
       </li>
   </ul>
           </section>
+
           <section class="advantages">
 <h2 class="advantages__title">Как это работает
   </h2>
@@ -77,6 +82,7 @@
       </li>
     </ul>
           </section>
+
           <section class="example">
             <h2 class="example__title">Живой пример</h2>
             <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
@@ -94,14 +100,16 @@
               </li>
             </ul>
           </section>
+          <section class="contacts">
+            <div class="contacts__adress adress">
+            <h2 class="visually-hidden">Адрес компании</h2>
+            <p class="adress__text">Приглашаем к сотрудничеству дилеров!
+              </p>
+              <p class="adress__street">ул. Большая Конюшенная, д. 19/8 <span class="adress__city">Санкт-Петербург</span></p>
+            </section>
         </main>
         <footer class="main-footer">
-          <section class="contacts">
-            <h2 class="visually-hidden">Адрес компании</h2>
-            <p class="contacts__text">Приглашаем к сотрудничеству дилеров!
-              </p>
-              <p class="adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-            </section>
+
             <p class="company-name">Cat Energy</p>
             <section class="social">
               <ul class="social__list">
