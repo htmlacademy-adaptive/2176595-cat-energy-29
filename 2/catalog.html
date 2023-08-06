@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
@@ -9,18 +10,20 @@
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи">
         </a>
-        <p class="company-name">Cat Energy</p>
+        <a class="main-header__wordmark-link">
+          <img class="main-header__wordmark-image">
+                  </a>
         <nav class="navigation">
           <button class="navigation__toogle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-<<ul class="navigation__list">
+<ul class="navigation__list">
   <li class="navigation__item">
     <a class="navigation__link" href="index.html">
       Главная
       </a>
     </li>
-    <li clas="navigation__item">
+    <li class="navigation__item">
       <a class="navigation__link" href="catalog.html">
         Каталог продукции
       </a>
@@ -40,12 +43,12 @@
   Каталог продукции
 </h1>
 <section class="main-catalog main-product">
-  <h2 class="visually-hidden">Каталог основных продуктов </h2>
+  <h2 class="visually-hidden"> Основные продукты </h2>
   <ul class="main-product__list">
     <li class="main-product__item">
       <h3 class="main-product__title">Cat Energy PRO 500 г
         </h3>
-        <table class="main-catalog__table">
+        <table class="main-catalog__characteristic">
           <tbody>
             <tr>
               <td class="main-product__name">Масса</td>
@@ -68,7 +71,7 @@
       <li class="main-product__item">
         <h3 class="main-product__title">Cat Energy PRO 1000 г
           </h3>
-          <table class="main-catalog__table">
+          <table class="main-catalog__characteristic">
             <tbody>
               <tr>
                 <td class="main-product__name">Масса</td>
@@ -91,7 +94,7 @@
         <li class="main-product__item">
           <h3 class="main-product__title">Cat Energy PRO 500 г
             </h3>
-            <table class="main-catalog__table">
+            <table class="main-catalog__characteristic">
               <tbody>
                 <tr>
                   <td class="main-product__name">Масса</td>
@@ -114,7 +117,7 @@
           <li class="main-product__item">
             <h3 class="main-product__title">Cat Energy PRO 1000 г
               </h3>
-              <table class="main-catalog__table">
+              <table class="main-catalog__characteristic">
                 <tbody>
                   <tr>
                     <td class="main-product__name">Масса</td>
@@ -137,7 +140,7 @@
             <li class="main-product__item">
               <h3 class="main-product__title">Cat Energy SLIM 1000 г
                 </h3>
-                <table class="main-catalog__table">
+                <table class="main-catalog__characteristic">
                   <tbody>
                     <tr>
                       <td class="main-product__name">Масса</td>
@@ -160,7 +163,7 @@
               <li class="main-product__item">
               <h3 class="main-product__title">Cat Energy SLIM 1000 г
                 </h3>
-                <table class="main-catalog__table">
+                <table class="main-catalog__characteristic">
                   <tbody>
                     <tr>
                       <td class="main-product__name">Масса</td>
@@ -183,7 +186,7 @@
               <li class="main-product__item">
                 <h3 class="main-product__title">Cat Energy SLIM 500 г
                   </h3>
-                  <table class="main-catalog__table">
+                  <table class="main-catalog__characteristic">
                     <tbody>
                       <tr>
                         <td class="main-product__name">Масса</td>
@@ -204,7 +207,7 @@
                     </button>
                 </li>
           </ul>
-          <div class="main-product show-all ">
+          <div class="main-product show-all">
             <p class="show-all__text">
               Показать еще 100500 товаров
             </p>
@@ -213,18 +216,19 @@
             </p>
             <button class="show-all button" type="button">
               Показать все
+              </button>
             </div>
   </section>
   <section class="main-catalog extra-product">
     <h2 class="extra-product__title">Дополнительные товары  </h2>
-    <ul class="extra_product__list">
+    <ul class="extra-product__list">
       <li class="extra-product__item">
         <h3 class="extra-product__title"> Сахарозаменитель </h3>
-        <table class="extra-product__table">
+        <table class="extra-product__characteristic">
           <tbody>
             <tr>
-              <td class="main-product__name">1 упаковка (100 г)</td>
-              <td class="main-product__property">200 </td>
+              <td class="extra-product__name">1 упаковка (100 г)</td>
+              <td class="extra-product__property">200 </td>
             </tr>
             </tbody>
             </table>
@@ -234,11 +238,11 @@
             </li>
             <li class="extra-product__item">
               <h3 class="extra-product__title">Питьевая вода</h3>
-              <table class="extra-product__table">
+              <table class="extra-product__characteristic">
               <tbody>
               <tr>
-              <td class="main-product__name">5 литров</td>
-              <td class="main-product__property">50 р</td>
+              <td class="extra-product__name">5 литров</td>
+              <td class="extra-product__property">50 р</td>
             </tr>
           </tbody>
           </table>
@@ -248,11 +252,11 @@
             </li>
             <li class="extra-product__item">
               <h3 class="extra-product__title">Молоко</h3>
-              <table class="extra-product__table">
+              <table class="extra-product__characteristic">
               <tbody>
               <tr>
-              <td class="main-product__name">1 литр</td>
-              <td class="main-product__property">100 р</td>
+              <td class="extra-product__name">1 литр</td>
+              <td class="extra-product__property">100 р</td>
             </tr>
           </tbody>
           </table>
@@ -262,11 +266,11 @@
             </li>
             <li class="extra-product__item">
               <h3 class="extra-product__title"> Витамины</h3>
-              <table class="extra-product__table">
+              <table class="extra-product__characteristict">
               <tbody>
               <tr>
-              <td class="main-product__name">1 упаковка (30 г)</td>
-              <td class="main-product__property">300 р</td>
+              <td class="extra-product__name">1 упаковка (30 г)</td>
+              <td class="extra-product__property">300 р</td>
             </tr>
           </tbody>
           </table>
@@ -287,12 +291,16 @@
     <p class="adress__text">Приглашаем к сотрудничеству дилеров!
       </p>
       <p class="adress__street">ул. Большая Конюшенная, д. 19/8 <span class="adress__city">Санкт-Петербург</span></p>
+      </div>
     </section>
 </main>
 <footer class="main-footer">
 
-    <p class="company-name">Cat Energy</p>
+    <a class="main-header__wordmark-link" href="index.html">
+          <img class="main-header__wordmark-image">
+                  </a>
     <section class="social">
+      <h2 class="visually-hidden">Контакты социальных сетей</h2>
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href=""> </a>
