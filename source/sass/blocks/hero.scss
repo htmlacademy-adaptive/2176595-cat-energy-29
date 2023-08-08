@@ -1,0 +1,25 @@
+.hero {
+  color:#ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-wrapper {
+  background-color: #68b738;
+}
+
+.hero__main-heading {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.hero__slogan {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+}

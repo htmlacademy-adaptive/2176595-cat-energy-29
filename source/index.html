@@ -3,20 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <title>Кэт Энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи">
+        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи">
         </a>
         <a class="main-header__wordmark-link">
-<img class="main-header__wordmark-image">
+<img class="main-header__wordmark-image" src="img/logo-cat-energy.svg" width="101" height="18" alt="Торговая марка Cat Energy">
         </a>
           <nav class="navigation">
           <button class="navigation__toogle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-<ul class="navigation__list">
+<ul class="navigation__list navigation__list--hidden">
 <li class="navigation__item">
   <a class="navigation__link" href="index.html">
     Главная
@@ -37,14 +38,16 @@
     </header>
       <main class="main-container">
         <section class="hero">
+          <div class="hero-wrapper">
           <h1 class="hero__main-heading">Функциональное
             питание для котов
             </h1>
             <p class="hero__slogan">
               Занялся собой? Займись котом!
             </p>
-            <a class="hero__form-link" href="form.html">Подобрать программу
-              </a>
+            </div>
+            <button class="hero__button button" href="form.html" type="button">Подобрать программу
+            </button>
           </section>
           <section class="nutrition-programms">
 <h2 class="visually-hidden">
@@ -87,11 +90,11 @@
             <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
             <ul class="example__list">
               <li class="example__item">
-                <h3 class="example__name"> Снижение веса</h3>
+                <h3 class="example__name"> cнижение веса</h3>
                 <p class="example__value">5 кг</p>
               </li>
               <li class="example__item">
-                <h3 class="example__name">Затрачено времени</h3>
+                <h3 class="example__name">затрачено времени</h3>
                 <p class="example__value">60 дней</p>
               </li>
               <li class="example__item">
@@ -110,10 +113,10 @@
         </main>
         <footer class="main-footer">
 
-           <a class="main-header__wordmark-link" href="index.html">
-          <img class="main-header__wordmark-image">
+           <a class="main-header__wordmark-link main-header__wordmark-link--footer" href="index.html">
+            <img class="main-header__wordmark-image main-header__wordmark-image--footer" src="img/logo-cat-energy.svg" width="128" height="24">
                   </a>
-
+<div class="social">
               <ul class="social__list">
                 <li class="social__item">
                   <a class="social__link social__link--vkontakte" href=""> </a>
@@ -128,9 +131,15 @@
                       <span class="visually-hidden">Телеграмм</span>
                       </li>
                 </ul>
+                </div>
 
             <div class="main-footer__copyright copyright">
-              <a class="copyright__link" href="">HTML Academy</a>
+              <a class="copyright__wordmark" href="https://htmlacademy.ru/study">
+                HTML Academy
+              </a>
+              <a class="copyright__logo" href="https://htmlacademy.ru/study">
+                <img class="copyright__image" src="img/html-academy-logo.svg" width="27" height="34" alt="Логотип HTML Academy.">
+              </a>
             </div>
         </footer>
     </body>
