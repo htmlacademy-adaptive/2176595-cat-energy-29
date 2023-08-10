@@ -1,18 +1,23 @@
 .page {
+  margin: 0 auto;
+  display:flex;
+}
+
+.page__body {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
   background-color: #ffffff;
+  margin: 0 auto;
+  min-width: 320px;
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.page__body {
-  margin: 0 auto;
-  width: 320px;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+.page__container {
+  width: 280px;
+  padding: 2 20px;
 }

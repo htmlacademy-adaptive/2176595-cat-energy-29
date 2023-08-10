@@ -1,5 +1,7 @@
 .extra-product__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .extra-product__title {
@@ -9,6 +11,7 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .extra-product__characteristic {
