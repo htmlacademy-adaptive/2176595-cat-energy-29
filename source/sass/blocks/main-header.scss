@@ -23,3 +23,12 @@
   color: inherit;
 }
 
+@media (min-width: $tablet-width) {
+  .navigation-list {
+    display: flex;
+  }
+
+  .navigation__toogle {
+    display: none;
+  }
+}

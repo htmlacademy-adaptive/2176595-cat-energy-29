@@ -1,6 +1,6 @@
 .page {
   margin: 0 auto;
-  display:flex;
+  display: flex;
 }
 
 .page__body {
@@ -19,5 +19,16 @@
 
 .page__container {
   width: 280px;
-  padding: 2 20px;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    min-width: 768px;
+  }
+
+  .page__container {
+    width: 708px;
+    padding: 25px 30px 0 30px;
+  }
 }
