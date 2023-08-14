@@ -4,6 +4,13 @@
   padding: 0;
 }
 
+.main-product__item {
+  padding: 20px 20px 25px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .main-product__title {
   color: #222222;
   font-family: "Oswald", sans-serif;
@@ -11,6 +18,8 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  width: 80px;
+  margin: 0;
 }
 
 .main-product__characteristic {
@@ -20,11 +29,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
+  display: flex;
 }
 
-.main-product__show-all {
+.main-product__button--extra {
   background-color: #f2f2f2;
   color: #444444;
+  padding: 10px 94px;
 }
 
 .main-product__extra-main {
@@ -42,4 +53,8 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+}
+
+.main-product__item--extra {
+  align-items: center;
 }

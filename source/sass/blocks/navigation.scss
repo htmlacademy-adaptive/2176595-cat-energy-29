@@ -1,12 +1,37 @@
 .navigation__list {
   list-style-type: none;
-}
-
-.navigation__list--hidden {
   display: none;
 }
 
 .navigation__link {
   text-decoration: none;
   color: inherit;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 436px;
+    padding: 0;
+  }
+
+  .navigation__toogle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 436px;
+    padding: 0;
+  }
+
+  .navigation__toogle {
+    display: none;
+  }
 }

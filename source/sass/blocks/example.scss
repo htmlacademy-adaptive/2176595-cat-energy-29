@@ -1,5 +1,6 @@
 .example {
   background-color: #eaeaea;
+  padding: 25px 20px 40px 20px;
 }
 
 .example__title {
@@ -9,7 +10,9 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
-  margin: 0;
+  gap: 40px;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .example__description {
