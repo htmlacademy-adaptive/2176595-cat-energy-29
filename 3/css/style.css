@@ -158,7 +158,6 @@
 .advantages {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 50px;
 }
 
 .advantages__title {
@@ -184,6 +183,7 @@
   gap: 26px;
   width: 200px;
   margin-left: auto;
+  margin-bottom: 50px;
 }
 
 .example {
@@ -301,10 +301,7 @@
 }
 
 .main-product__item {
-  padding: 20px 20px 25px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  padding: 20px 0 25px 0;
 }
 
 .main-product__title {
@@ -316,6 +313,8 @@
   text-transform: uppercase;
   width: 80px;
   margin: 0;
+  margin-bottom: 14px;
+  margin-left: 140px;
 }
 
 .main-product__characteristic {
@@ -325,7 +324,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
-  display: flex;
+  margin-bottom: 21px;
+  margin-left: auto;
 }
 
 .main-product__button--extra {
@@ -349,10 +349,21 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+  margin: 0;
+  margin-bottom: 21px;
 }
 
 .main-product__item--extra {
+  display: flex;
+  flex-direction: column;
+  padding-top: 78px;
   align-items: center;
+}
+
+.main-product__characteristic-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
 }
 
 .extra-product__list {
@@ -401,6 +412,11 @@
   gap: 15px;
 }
 
+.extra-product__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .present {
   color: #ffffff;
   font-family: "Lato", sans-serif;
@@ -408,6 +424,12 @@
   font-weight: 400;
   line-height: 20px;
   background-color: rgba(104, 183, 56, 0.85);
+}
+
+.present__text {
+  margin: 35px 0;
+  padding: 187px 60px 43px 60px;
+  text-align: center;
 }
 
 .copyright {
@@ -465,7 +487,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
-  margin: 0;
+  margin: 26px 97px 49px 0;
 }
 
 .form-inner__item {
@@ -511,8 +533,13 @@
 }
 
 .form-inner--contacts {
-  padding: 22px 0 19px 0;
   margin: 0;
+}
+
+.form-inner__label--comments {
+  padding: 24px 179px 38px 0;
+  font-size: 24px;
+  line-height: 26px;
 }
 
 .checkbox__list {
@@ -536,6 +563,12 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
+  margin: 0 0 36px 0;
+  padding: 0;
+}
+
+.checkbox__item {
+  margin-bottom: 13px;
 }
 
 .visually-hidden {
@@ -598,16 +631,11 @@
   border: 0;
   cursor: pointer;
   width: 280px;
-  padding: 10px 109px;
+  padding: 10px 0;
 }
 
 .button--extra {
   background-color: #f2f2f2;
   color: #444444;
-  padding: 10px 94px;
-}
-
-.button--programm-select {
-  padding: 10px 65px;
 }
 /*# sourceMappingURL=style.css.map */
