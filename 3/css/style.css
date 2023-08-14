@@ -10,19 +10,6 @@
   text-transform: uppercase;
 }
 
-.navigation__list {
-  list-style-type: none;
-}
-
-.navigation__list--hidden {
-  display: none;
-}
-
-.navigation__link {
-  text-decoration: none;
-  color: inherit;
-}
-
 @font-face {
   font-family: "Lato";
   font-weight: 400;
@@ -40,31 +27,6 @@
 * {
   box-sizing: border-box;
   outline: 1px solid #ff0000;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-  display: none;
-}
-
-.button {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Oswald";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-  background-color: #69b838;
-  border: 0;
-  cursor: pointer;
 }
 
 .page {
@@ -87,19 +49,44 @@
 }
 
 .page__container {
-  width: 280px;
-  padding: 2 20px;
+  width: 320px;
 }
 
+@media (min-width: 768px) {
+  .page__body {
+    min-width: 768px;
+  }
+
+  .page__container {
+    width: 708px;
+    padding: 25px 30px 0 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .page__body {
+    min-width: 1200px;
+  }
+
+  .page__container {
+    width: 1200px;
+    padding: 0 40px;
+  }
+}
 .hero {
   color: #ffffff;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  align-items: center;
 }
 
 .hero-wrapper {
   background-color: #68b738;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 27px 35px 0 35px;
+  gap: 25px;
 }
 
 .hero__main-heading {
@@ -108,6 +95,7 @@
   line-height: 36px;
   font-weight: 400;
   text-align: center;
+  margin: 0;
 }
 
 .hero__slogan {
@@ -116,11 +104,14 @@
   line-height: 14px;
   text-transform: uppercase;
   font-weight: 400;
+  margin: 0;
 }
 
 .nutrition-programms {
   color: #000000;
+  margin: 0 auto;
   margin-bottom: 20px;
+  width: 280px;
 }
 
 .nutrition-programms__list {
@@ -165,6 +156,8 @@
 }
 
 .advantages {
+  width: 280px;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
@@ -175,7 +168,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
-  margin: 0;
+  gap: 40px;
 }
 
 .advantages__list {
@@ -187,26 +180,33 @@
   line-height: 18px;
   margin: 0;
   padding: 0;
+  display: grid;
+  gap: 26px;
+  width: 200px;
+  margin-left: auto;
 }
 
 .example {
   background-color: #eaeaea;
+  padding: 25px 20px 40px 20px;
 }
 
 .example__title {
   color: #000000;
   text-align: center;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
-  margin: 0;
+  gap: 40px;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .example__description {
   list-style-type: none;
   color: #444444;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -226,7 +226,7 @@
 
 .example__name {
   color: #444444;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
@@ -249,6 +249,7 @@
 
 .contacts__adress {
   display: flex;
+  padding: 26px 20px;
 }
 
 .contacts__text {
@@ -274,6 +275,15 @@
   list-style-type: none;
 }
 
+.main-catalog {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.main-catalog__title-container {
+  padding: 27px 17px 41px 0;
+}
+
 .main-catalog__title {
   color: #000000;
   font-family: "Oswald", sans-serif;
@@ -290,6 +300,13 @@
   padding: 0;
 }
 
+.main-product__item {
+  padding: 20px 20px 25px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .main-product__title {
   color: #222222;
   font-family: "Oswald", sans-serif;
@@ -297,6 +314,8 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  width: 80px;
+  margin: 0;
 }
 
 .main-product__characteristic {
@@ -306,11 +325,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
+  display: flex;
 }
 
-.main-product__show-all {
+.main-product__button--extra {
   background-color: #f2f2f2;
   color: #444444;
+  padding: 10px 94px;
 }
 
 .main-product__extra-main {
@@ -330,10 +351,28 @@
   line-height: 16px;
 }
 
+.main-product__item--extra {
+  align-items: center;
+}
+
 .extra-product__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.extra-product__main-title {
+  color: #222222;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  width: 230px;
+}
+
+.extra-product__title-container {
+  padding: 25px 70px 36px 0;
 }
 
 .extra-product__title {
@@ -355,6 +394,13 @@
   line-height: 16px;
 }
 
+.extra-product__item {
+  display: flex;
+  flex-direction: column;
+  padding: 13px 0 19px 0;
+  gap: 15px;
+}
+
 .present {
   color: #ffffff;
   font-family: "Lato", sans-serif;
@@ -369,6 +415,11 @@
   justify-content: space-between;
 }
 
+.form-container {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .form-container__title {
   color: #000000;
   font-family: "Oswald", sans-serif;
@@ -376,6 +427,12 @@
   font-weight: 400;
   line-height: 36px;
   margin: 0;
+}
+
+.form-container__wrapper {
+  padding: 21px 20px 39px 0;
+  display: grid;
+  gap: 37px;
 }
 
 .form-container__description {
@@ -387,6 +444,7 @@
   line-height: 18px;
   text-transform: uppercase;
   margin: 0;
+  width: 226px;
 }
 
 .form-inner__list {
@@ -465,5 +523,78 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  display: none;
+}
+
+.navigation__list {
+  list-style-type: none;
+  display: none;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 436px;
+    padding: 0;
+  }
+
+  .navigation__toogle {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .navigation__list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 436px;
+    padding: 0;
+  }
+
+  .navigation__toogle {
+    display: none;
+  }
+}
+.button {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #69b838;
+  border: 0;
+  cursor: pointer;
+  width: 280px;
+  padding: 10px 109px;
+}
+
+.button--extra {
+  background-color: #f2f2f2;
+  color: #444444;
+  padding: 10px 94px;
+}
+
+.button--programm-select {
+  padding: 10px 65px;
 }
 /*# sourceMappingURL=style.css.map */

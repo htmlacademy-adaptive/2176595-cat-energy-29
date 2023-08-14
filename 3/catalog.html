@@ -42,9 +42,12 @@
 
 
     <main class="main-catalog">
-<h1 class="main-catalog__title">
+<div class="main-catalog__title-container">
+<h1 class="main-catalog__title ">
   Каталог продукции
 </h1>
+</div>
+
 <section class="main-catalog main-product">
   <h2 class="visually-hidden"> Основные продукты </h2>
   <ul class="main-product__list">
@@ -209,21 +212,23 @@
                     Заказать
                     </button>
                 </li>
-                <li class="main-product__item">
+                <li class="main-product__item main-product__item--extra">
                   <p class="main-product__extra-main">
                     Показать еще 100500 товаров
                   </p>
                   <p class="main-product__extra-taste">
                    На самом деле вкусов еще больше!
                   </p>
-                  <button class="main-product__show-all button" type="button">
+                  <button class="main-product__button button button--extra" type="button">
                     Показать все
                     </button>
                   </li>
           </ul>
   </section>
   <section class="main-catalog extra-product">
-    <h2 class="extra-product__title">Дополнительные товары  </h2>
+    <div class="extra-product__title-container">
+    <h2 class="extra-product__main-title">Дополнительные товары  </h2>
+    </div>
     <ul class="extra-product__list">
       <li class="extra-product__item">
         <h3 class="extra-product__title"> Сахарозаменитель </h3>
@@ -284,6 +289,7 @@
               <table class="extra-product__characteristict">
               <tbody>
               <tr>
+                <td class="visually-hidden">Вид упаковки</td>
               <td class="extra-product__name">1 упаковка (30 г)</td>
               </tr>
               <tr>
