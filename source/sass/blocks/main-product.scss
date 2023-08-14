@@ -5,10 +5,7 @@
 }
 
 .main-product__item {
-  padding: 20px 20px 25px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  padding: 20px 0 25px 0;
 }
 
 .main-product__title {
@@ -20,6 +17,8 @@
   text-transform: uppercase;
   width: 80px;
   margin: 0;
+  margin-bottom: 14px;
+  margin-left: 140px;
 }
 
 .main-product__characteristic {
@@ -29,7 +28,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
-  display: flex;
+  margin-bottom: 21px;
+  margin-left: auto;
 }
 
 .main-product__button--extra {
@@ -53,8 +53,19 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+  margin: 0;
+  margin-bottom: 21px;
 }
 
 .main-product__item--extra {
+  display: flex;
+  flex-direction: column;
+  padding-top: 78px;
   align-items: center;
+}
+
+.main-product__characteristic-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
 }
