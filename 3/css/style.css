@@ -47,31 +47,31 @@
   flex-direction: column;
   align-items: center;
 }
-
-.page__container {
-  width: 320px;
-}
-
 @media (min-width: 768px) {
   .page__body {
     min-width: 768px;
   }
-
-  .page__container {
-    width: 708px;
-    padding: 25px 30px 0 30px;
-  }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .page__body {
-    min-width: 1200px;
-  }
-
-  .page__container {
-    width: 1200px;
-    padding: 0 40px;
+    min-width: 1220px;
   }
 }
+
+.page__container {
+  width: 320px;
+}
+@media (min-width: 768px) {
+  .page__container {
+    min-width: 708px;
+  }
+}
+@media (min-width: 1220px) {
+  .page__container {
+    width: 1220px;
+  }
+}
+
 .hero {
   color: #ffffff;
   display: flex;
@@ -79,14 +79,35 @@
   margin-bottom: 20px;
   align-items: center;
 }
+@media (min-width: 768px) {
+  .hero {
+    align-items: flex-start;
+  }
+}
 
-.hero-wrapper {
+.hero__wrapper {
   background-color: #68b738;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 27px 35px 0 35px;
   gap: 25px;
+}
+@media (min-width: 768px) {
+  .hero__wrapper {
+    padding: 65px 210px 0 35px;
+    gap: 40px;
+    background-color: #ffffff;
+    color: #111111;
+  }
+}
+@media (min-width: 1220px) {
+  .hero__wrapper {
+    padding: 110px 0 0 65px;
+    gap: 40px;
+    background-color: #ffffff;
+    color: #111111;
+  }
 }
 
 .hero__main-heading {
@@ -96,6 +117,15 @@
   font-weight: 400;
   text-align: center;
   margin: 0;
+  width: 255px;
+}
+@media (min-width: 768px) {
+  .hero__main-heading {
+    text-align: left;
+    width: 420px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .hero__slogan {
@@ -105,6 +135,16 @@
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .hero__slogan {
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 290px;
+  }
 }
 
 .nutrition-programms {
@@ -112,6 +152,16 @@
   margin: 0 auto;
   margin-bottom: 20px;
   width: 280px;
+}
+@media (min-width: 768px) {
+  .nutrition-programms {
+    width: 708px;
+  }
+}
+@media (min-width: 1220px) {
+  .nutrition-programms {
+    width: 1220px;
+  }
 }
 
 .nutrition-programms__list {
@@ -122,10 +172,35 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .nutrition-programm {
+    gap: 30px;
+  }
+}
+@media (min-width: 1220px) {
+  .nutrition-programm {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .nutrition-programm__item {
   background-color: #f2f2f2;
+}
+@media (min-width: 768px) {
+  .nutrition-programm__item {
+    padding: 77px 316px 57px 52px;
+  }
+}
+@media (min-width: 1220px) {
+  .nutrition-programm__item {
+    width: 570px;
+  }
 }
 
 .nutrition-programm__title {
@@ -133,8 +208,23 @@
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 37px;
+  line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+}
+@media (min-width: 768px) {
+  .nutrition-programm__title {
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 24px;
+    width: 250px;
+  }
+}
+@media (min-width: 1220px) {
+  .nutrition-programm__title {
+    margin-bottom: 73px;
+  }
 }
 
 .nutrition-programm__description {
@@ -143,6 +233,17 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  margin: 0;
+  margin-bottom: 42px;
+  width: 227px;
+}
+@media (min-width: 768px) {
+  .nutrition-programm__description {
+    width: 340px;
+    margin-bottom: 52px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .nutrition-programm__link {
@@ -154,10 +255,20 @@
   line-height: 16px;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  .nutrition-programm__link {
+    font-size: 20px;
+  }
+}
 
 .advantages {
   width: 280px;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .advantages {
+    width: 708px;
+  }
 }
 
 .advantages__title {
@@ -167,7 +278,16 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
-  gap: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .advantages__title {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
 }
 
 .advantages__list {
@@ -179,16 +299,42 @@
   line-height: 18px;
   margin: 0;
   padding: 0;
-  display: grid;
+  display: flex;
   gap: 26px;
   width: 200px;
   margin-left: auto;
   margin-bottom: 50px;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .advantages__list {
+    width: 640px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 768px) {
+  .advantages__item {
+    width: 250px;
+  }
 }
 
 .example {
   background-color: #eaeaea;
   padding: 25px 20px 40px 20px;
+}
+@media (min-width: 768px) {
+  .example {
+    padding: 45px 0 101px 0;
+    background-color: #ffffff;
+    color: #000000;
+  }
 }
 
 .example__title {
@@ -198,9 +344,17 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
-  gap: 40px;
   margin-top: 0;
   margin-bottom: 40px;
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .example__title {
+    width: 330px;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__description {
@@ -211,12 +365,39 @@
   font-weight: 400;
   line-height: 18px;
   margin: 0;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .example__description {
+    width: 708px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 52px;
+  }
 }
 
 .example__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+@media (min-width: 768px) {
+  .example__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__list-wrapper--value-time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .example__list-wrapper--value-time {
+    width: 370px;
+    margin-bottom: 0;
+  }
 }
 
 .example__item {
@@ -231,6 +412,13 @@
   font-weight: 400;
   line-height: 12px;
   order: 1;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .example__name {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__value {
@@ -240,16 +428,36 @@
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 8px;
+}
+@media (min-width: 768px) {
+  .example__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__value--price {
   font-size: 14px;
   line-height: 20px;
 }
+@media (min-width: 768px) {
+  .example__value--price {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
 
 .contacts__adress {
   display: flex;
   padding: 26px 20px;
+}
+@media (min-width: 768px) {
+  .contacts__adress {
+    padding: 60px 40px;
+    justify-content: space-between;
+  }
 }
 
 .contacts__text {
@@ -260,6 +468,14 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+  width: 140px;
+}
+@media (min-width: 768px) {
+  .contacts__text {
+    font-size: 20px;
+    line-height: 26px;
+    width: 165px;
+  }
 }
 
 .contacts__street {
@@ -269,6 +485,22 @@
   font-weight: 400;
   line-height: 20px;
   margin: 0;
+  width: 140px;
+}
+@media (min-width: 768px) {
+  .contacts__street {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .social__list {
@@ -587,6 +819,24 @@
   list-style-type: none;
   display: none;
 }
+@media (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    width: 436px;
+    padding: 0;
+  }
+}
+@media (min-width: 1220px) {
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    width: 476px;
+    padding: 0;
+    color: #ffffff;
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+}
 
 .navigation__link {
   text-decoration: none;
@@ -594,31 +844,11 @@
 }
 
 @media (min-width: 768px) {
-  .navigation__list {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    width: 436px;
-    padding: 0;
-  }
-
   .navigation__toogle {
     display: none;
   }
 }
-@media (min-width: 1200px) {
-  .navigation__list {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    width: 436px;
-    padding: 0;
-  }
 
-  .navigation__toogle {
-    display: none;
-  }
-}
 .button {
   color: #ffffff;
   text-align: center;
@@ -637,5 +867,28 @@
 .button--extra {
   background-color: #f2f2f2;
   color: #444444;
+}
+
+@media (min-width: 768px) {
+  .button {
+    width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .button--programm-select {
+    margin-left: 35px;
+  }
+}
+@media (min-width: 1220px) {
+  .button {
+    width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .button--programm-select {
+    margin-left: 65px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
