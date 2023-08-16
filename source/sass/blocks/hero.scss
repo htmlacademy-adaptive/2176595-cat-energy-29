@@ -4,15 +4,33 @@
   flex-direction: column;
   margin-bottom: 20px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+  }
 }
 
-.hero-wrapper {
+.hero__wrapper {
   background-color: #68b738;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 27px 35px 0 35px;
   gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 210px 0 35px;
+    gap: 40px;
+    background-color: #ffffff;
+    color: #111111;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 110px 0 0 65px;
+    gap: 40px;
+    background-color: #ffffff;
+    color: #111111;
+  }
 }
 
 .hero__main-heading {
@@ -22,6 +40,14 @@
   font-weight: 400;
   text-align: center;
   margin: 0;
+  width: 255px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    width: 420px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .hero__slogan {
@@ -31,4 +57,13 @@
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
+  width: 200px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 290px;
+  }
 }

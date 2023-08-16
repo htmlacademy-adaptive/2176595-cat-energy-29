@@ -1,6 +1,11 @@
 .contacts__adress {
   display: flex;
   padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 40px;
+    justify-content: space-between;
+  }
 }
 
 .contacts__text {
@@ -11,6 +16,13 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 165px;
+  }
 }
 
 .contacts__street {
@@ -20,4 +32,12 @@
   font-weight: 400;
   line-height: 20px;
   margin: 0;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: right;
+  }
 }
