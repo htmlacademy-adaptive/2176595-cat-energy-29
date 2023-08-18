@@ -38,49 +38,50 @@
   </ul>
           </nav>
     </header>
-<main class="form-container">
-  <div class="form-container__wrapper">
-<h1 class="form-container__title">Подбор программы</h1>
-<p class="form-container__description">Заполните анкету, и мы подберем
+<main class="form">
+  <div class="form__title-container">
+<h1 class="form__title">Подбор программы</h1>
+<p class="form__description">Заполните анкету, и мы подберем
   программу питания для вашего кота</p>
   </div>
-  <form class="main-form" method="post" action="https://echo.htmlacademy.ru/">
-
-    <div class="form-inner">
+  <form class="form__container" method="post" action="https://echo.htmlacademy.ru/">
+    <div class="form__wrapper">
+    <div class="form-inner form-inner--container">
       <ul class="form-inner__list">
-        <li class="form-inner__item"
+        <li class="form-inner__item">
       <label class="form-inner__label" for="name"> Имя:*
         </label>
         <input class="form-inner__input" id="name" type="text" placeholder="Барсик">
       </li>
-      <li class="form-inner__item"
+      <li class="form-inner__item">
         <label class="form-inner__label" for="weight"> Вес:*
         </label>
       <input class="form-inner__input" id="weight" type="number" placeholder="7">
       </li>
-      <li class="form-inner__item"
+      <li class="form-inner__item">
       <label class="form-inner__label" for="age"> Возраст:*
       </label>
     <input class="form-inner__input" id="age" type="number" placeholder="7">
     </li>
     </ul>
-      </div>
-      <fieldset class="checkbox">
-        <ul class="checkbox__list">
+    <fieldset class="checkbox">
+      <ul class="checkbox__list checkbox__list--programm">
+        <li class="ckeckbox__item">
+            <input class="checkbox__input" type="radio" id="reduce-weight" name="reduce-weight" checked>
+            <label class="checkbox__label" for="reduce-weight">Похудение</label>
+          </li>
           <li class="ckeckbox__item">
-              <input class="checkbox__input" type="radio" id="reduce-weight" name="reduce-weight" checked>
-              <label class="checkbox__label" for="reduce-weight">Похудение</label>
-            </li>
-            <li class="ckeckbox__item">
-              <input class="checkbox__input"  type="radio" id="get-fat" name="get-fatter">
-              <label class="checkbox__label" for="get-fatter">Набор массы</label>
-            </li>
-            <li class="ckeckbox__item">
-              <input class="checkbox__input" type="radio" id="not-stated" name="not-stated">
-              <label class="checkbox__label" for="not-stated">Не знаю (нужен ваш совет)</label>
-            </li>
-          </ul>
-      </fieldset>
+            <input class="checkbox__input"  type="radio" id="get-fat" name="get-fatter">
+            <label class="checkbox__label" for="get-fatter">Набор массы</label>
+          </li>
+          <li class="ckeckbox__item">
+            <input class="checkbox__input" type="radio" id="not-stated" name="not-stated">
+            <label class="checkbox__label" for="not-stated">Не знаю (нужен ваш совет)</label>
+          </li>
+        </ul>
+    </fieldset>
+
+      </div>
 
 <div class="form-inner form-inner--contacts">
   <h2 class="form-inner__name">Контактные данные (владельца кота)</h2>
@@ -101,37 +102,39 @@
   <div class="form-inner form-inner--comments">
     <label class="form-inner__label form-inner__label--comments" for="comments"> Комментарий
     </label>
-    <input class="form-inner__input" id="comments" type="text" placeholder="Расскажите обо всех повадках кота">
+    <input class="form-inner__input form-inner__input--comments" id="comments" type="text" placeholder="Расскажите обо всех повадках кота">
     </div>
 
-    <fieldset class="checkbox">
+    <fieldset class="checkbox checkbox--food">
       <legend class="checkbox__legend">Дополнительно </legend>
-      <ul class="checkbox__list">
-        <li class="ckeckbox-item">
+      <ul class="checkbox__list checkbox__list--container">
+        <li class="ckeckbox__item checkbox__item--size">
             <input class="checkbox__input" type="checkbox" id="sweetener"  checked>
             <label class="checkbox__label" for="swetener">Сахарозаменитель</label>
           </li>
-          <li class="ckeckbox-item">
+          <li class="ckeckbox__item checkbox__item--size">
             <input class="checkbox__input" type="checkbox" id="water">
             <label class="checkbox__label" for="water">Питьевая вода</label>
           </li>
-          <li class="ckeckbox-item">
+          <li class="ckeckbox__item checkbox__item--size">
             <input class="checkbox__input" type="checkbox" id="milk">
             <label class="checkbox__label" for="milk">Молоко</label>
           </li>
-          <li class="ckeckbox-item">
+          <li class="ckeckbox__item checkbox__item--size">
             <input class="checkbox__input" type="checkbox" id="vitamins">
             <label class="checkbox__label" for="vitamins">Витамины</label>
           </li>
           </ul>
       </fieldset>
-      <button class="form-inner__button button" type="button">
+      </div>
+      <div class="form__container-button">
+      <button class="button" type="button">
         Отправить заявку
         </button>
         <p class="form-inner__comment"> * — Обязательные поля </p>
+        </div>
   </form>
-  <section class="contacts">
-    <section class="contacts">
+  <section class="contacts contacts--color">
       <div class="contacts__adress">
       <h2 class="visually-hidden">Адрес компании</h2>
       <p class="contacts__text">Приглашаем к сотрудничеству дилеров!
@@ -143,33 +146,33 @@
 <footer class="main-footer">
 
   <a class="main-header__wordmark-link main-header__wordmark-link--footer" href="index.html">
-    <img class="main-header__wordmark-image main-header__wordmark-image--footer" src="img/logo-cat-energy.svg" width="128" height="24">
-          </a>
+  <img class="main-header__wordmark-image main-header__wordmark-image--footer" src="img/logo-cat-energy.svg" width="128" height="24">
+        </a>
 <div class="social">
-      <ul class="social__list">
+    <ul class="social__list">
+      <li class="social__item">
+        <a class="social__link social__link--vkontakte" href=""> </a>
+        <span class="visually-hidden">Вконтакте</span>
+        </li>
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href=""> </a>
-          <span class="visually-hidden">Вконтакте</span>
+          <a class="social__link social__link--Youtube" href=""> </a>
+          <span class="visually-hidden">Youtube</span>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--Youtube" href=""> </a>
-            <span class="visually-hidden">Youtube</span>
+            <a class="social__link social__link--telegramm" href=""> </a>
+            <span class="visually-hidden">Телеграмм</span>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegramm" href=""> </a>
-              <span class="visually-hidden">Телеграмм</span>
-              </li>
-        </ul>
-        </div>
+      </ul>
+      </div>
 
-    <div class="main-footer__copyright copyright">
-      <a class="copyright__wordmark" href="https://htmlacademy.ru/study">
-        HTML Academy
-      </a>
-      <a class="copyright__logo" href="https://htmlacademy.ru/study">
-        <img class="copyright__image" src="img/html-academy-logo.svg" width="27" height="34" alt="Логотип HTML Academy.">
-      </a>
-    </div>
+  <div class="main-footer__copyright copyright">
+    <a class="copyright__wordmark" href="https://htmlacademy.ru/study">
+      HTML Academy
+    </a>
+    <a class="copyright__logo" href="https://htmlacademy.ru/study">
+      <img class="copyright__image" src="img/html-academy-logo.svg" width="27" height="34" alt="Логотип HTML Academy.">
+    </a>
+  </div>
 </footer>
 </div>
 </body>

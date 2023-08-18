@@ -32,12 +32,25 @@
 
 @media (min-width: $desktop-width) {
   .button {
-    width: 244px;
+    width: 249px;
     font-size: 20px;
     line-height: 20px;
   }
 
   .button--programm-select {
-    margin-left: 65px;
+    margin-left: 190px;
+  }
+}
+
+.button--extra-product {
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    grid-column: 1/-1;
+  }
+}
+
+.button--extra-product-small {
+  @media (min-width: $desktop-width) {
+    width: 244px;
   }
 }

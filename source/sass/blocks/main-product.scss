@@ -2,10 +2,30 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 76px;
+  }
 }
 
 .main-product__item {
   padding: 20px 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 161px 37px 40px 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .main-product__title {
@@ -19,6 +39,15 @@
   margin: 0;
   margin-bottom: 14px;
   margin-left: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 135px;
+    margin-left: 0;
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .main-product__characteristic {
@@ -30,6 +59,13 @@
   line-height: 16px;
   margin-bottom: 21px;
   margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 21px;
+  }
 }
 
 .main-product__button--extra {
@@ -45,6 +81,15 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 135px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 23px;
+  }
 }
 
 .main-product__extra-taste {
@@ -55,6 +100,13 @@
   line-height: 16px;
   margin: 0;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 82px;
+    text-align: center;
+  }
 }
 
 .main-product__item--extra {
@@ -62,10 +114,31 @@
   flex-direction: column;
   padding-top: 78px;
   align-items: center;
+  margin: 0;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding: 161px 37px 40px 37px;
+    margin-bottom: 0;
+  }
 }
 
 .main-product__characteristic-wrapper {
   display: flex;
   justify-content: space-between;
   width: 140px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-product__characteristic-wrapper {
+    width: 250px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-product__characteristic-wrapper {
+    width: 169px;
+    margin-bottom: 10px;
+  }
 }
