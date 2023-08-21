@@ -1,5 +1,5 @@
 .contacts--color {
-  background-color:#f2f2f2
+  background-color: #f2f2f2;
 }
 
 .contacts__adress {
@@ -9,7 +9,12 @@
   @media (min-width: $tablet-width) {
     padding: 60px 40px;
     justify-content: space-between;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
+
+    @media (min-width: $desktop-width) {
+      width: 565px;
+      margin: 95px 765px 106px 110px;
+    }
   }
 }
 

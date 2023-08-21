@@ -2,8 +2,8 @@
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
   align-items: center;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;

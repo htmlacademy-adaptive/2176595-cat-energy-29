@@ -52,5 +52,6 @@
 .button--extra-product-small {
   @media (min-width: $desktop-width) {
     width: 244px;
+    margin-left: auto;
   }
 }

@@ -39,6 +39,10 @@
     width: 165px;
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 164px;
+  }
 }
 
 
@@ -53,6 +57,10 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
   }
 }
 
@@ -71,10 +79,19 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding: 15px 0 17px 0;
+    gap: 0;
   }
 }
 
 .extra-product__wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+.extra-product__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }

@@ -1,6 +1,6 @@
 .example {
   background-color: #eaeaea;
-  padding: 25px 20px 40px 20px;
+  padding: 25px 20px 316px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 45px 0 101px 0;
@@ -9,16 +9,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: #eaeaea;
+    width: 1220px;
+    margin: 0 auto;
+    background-color: #ffffff;
   }
 }
 
 .example__container {
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
+    background-color: #eaeaea;
   }
 }
+
 
 .example__title {
   color: #000000;
@@ -36,6 +38,7 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -51,9 +54,13 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
   }
 }
 
@@ -69,6 +76,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    width: 708px;
   }
 }
 
@@ -90,6 +98,17 @@
 
 .example__item--rows {
   grid-column: 1/-1;
+  text-align: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .example__name {
@@ -99,7 +118,12 @@
   font-weight: 400;
   line-height: 12px;
   order: 1;
-  margin: 0;
+  width: 77px;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: -14px;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -115,20 +139,44 @@
   line-height: 24px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 8px;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  outline: 1px solid #cdcdcd;
+  width: 124px;
+  border-radius: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    width: 162px;
+    padding-top: 15px;
+    padding-bottom: 20px;
   }
 }
 
 .example__value--price {
   font-size: 14px;
   line-height: 20px;
+  padding: 0;
+  width: 188px;
+  outline: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    width: 174px;
+  }
+}
+
+.example__value--costs {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+  width: 64px;
+  outline: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
   }
 }

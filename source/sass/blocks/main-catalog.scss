@@ -37,4 +37,9 @@
     margin-top: 70px;
     margin-bottom: 75px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 219px;
+    margin-bottom: 0;
+  }
 }

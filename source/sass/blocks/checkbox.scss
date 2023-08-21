@@ -17,6 +17,12 @@
     row-gap: 20px;
     column-gap: 123px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 1124px;
+    justify-content: space-between;
+  }
 }
 
 .checkbox__list--programm {
