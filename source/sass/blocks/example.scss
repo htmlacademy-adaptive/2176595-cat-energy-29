@@ -166,6 +166,10 @@
     font-size: 20px;
     line-height: 20px;
     width: 174px;
+    text-align: right;
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
   }
 }
 
@@ -173,7 +177,6 @@
   font-size: 14px;
   line-height: 20px;
   padding: 0;
-  width: 64px;
   outline: 0;
 
   @media (min-width: $tablet-width) {
