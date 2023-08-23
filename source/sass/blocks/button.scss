@@ -22,9 +22,11 @@
   }
 
   .button--programm-select {
-    margin-left: 35px;
+    margin-left: 90px;
+    margin-bottom: 526px;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .button {
@@ -34,7 +36,7 @@
   }
 
   .button--programm-select {
-    margin-left: 59px;
+    margin-bottom: 200px;
   }
 }
 

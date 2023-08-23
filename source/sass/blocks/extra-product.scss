@@ -1,3 +1,11 @@
+.extra-product {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
 .extra-product__list {
   list-style-type: none;
   margin: 0;
@@ -22,6 +30,10 @@
     line-height: 36px;
     margin: 0;
     max-width: max-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
   }
 }
 

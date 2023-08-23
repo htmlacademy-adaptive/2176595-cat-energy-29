@@ -8,7 +8,8 @@
 
 .contacts__adress {
   display: flex;
-  padding: 26px 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 40px;

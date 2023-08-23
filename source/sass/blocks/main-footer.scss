@@ -1,7 +1,8 @@
 .main-footer {
+  background-color: #f2f2f2;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    background-color: #f2f2f2;
   }
 }
