@@ -27,8 +27,12 @@
 
 .checkbox__list--programm {
   @media (min-width: $tablet-width) {
-    padding: 23px 0 23px 27px;
+    padding: 23px 0 27px 27px;
     outline: 1px solid #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 0 25px 28px;
   }
 }
 
@@ -68,5 +72,14 @@
 .checkbox__item--size {
   @media (min-width: $tablet-width) {
     width: max-content;
+  }
+}
+
+
+.checkbox__input {
+  margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
   }
 }

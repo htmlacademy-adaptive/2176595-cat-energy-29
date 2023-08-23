@@ -12,12 +12,14 @@
     width: 1220px;
     margin: 0 auto;
     background-color: #ffffff;
+    padding: 0;
   }
 }
 
 .example__container {
   @media (min-width: $desktop-width) {
     background-color: #eaeaea;
+    padding: 70px 0 75px 110px;
   }
 }
 
@@ -124,10 +126,12 @@
   margin: 0 auto;
   margin-top: -14px;
   z-index: 2;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    background-color: #ffffff;
   }
 }
 

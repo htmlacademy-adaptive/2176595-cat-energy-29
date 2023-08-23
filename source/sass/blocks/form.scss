@@ -1,4 +1,4 @@
-.form {
+/*.form {
   width: 280px;
   margin: 0 auto;
 
@@ -9,22 +9,26 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
   }
-}
+} */
 
 .form__title-container {
   display: flex;
   flex-direction: column;
   gap: 37px;
+  margin: 0 auto;
   margin-bottom: 25px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
     gap: 54px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 68px;
     gap: 55px;
+    width: 1220px;
   }
 }
 
@@ -63,6 +67,19 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+  }
+}
+
+.form__container {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
 }
 

@@ -10,4 +10,13 @@
   text-transform: uppercase;
   align-items: center;
   min-height: 31px;
+  padding-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
 }

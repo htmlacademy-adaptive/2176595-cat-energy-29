@@ -23,6 +23,10 @@
   padding: 0;
   display: grid;
   gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
 }
 
 .form-inner__list--contacts {
@@ -33,8 +37,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    gap: 0;
-    justify-content: space-between;
+    gap: 80px;
   }
 }
 
@@ -44,11 +47,14 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
-  margin: 0 97px 49px 0;
+  margin: 0;
+  max-width: 187px;
+  margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    max-width: max-content;
   }
 }
 
@@ -97,6 +103,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
+    padding: 11px 0 11px 20px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -134,5 +141,42 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 9px 887px 136px 20px;
+  }
+}
+
+.form-inner__wrapper {
+  display: flex;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
+
+  &::before {
+    content: "";
+    height: 15px;
+    width: calc(50% - 160px);
+    border-bottom: 2px solid #68b738;
+
+    @media (min-width: $tablet-width) {
+      width: calc(50% - 354px);
+      height: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: calc(50% - 650px);
+    }
+  }
+
+  &::after {
+    content: "";
+    height: 15px;
+    width: 10px;
+    border-bottom: 2px solid #68b738;
+    flex-grow: 1;
+
+    @media (min-width: $tablet-width) {
+      height: 22px;
+    }
   }
 }

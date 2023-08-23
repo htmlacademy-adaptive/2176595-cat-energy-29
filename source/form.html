@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <div class="page__container">
     <header class="main-header">
+      <div class="container container--header">
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи">
         </a>
         <a class="main-header__wordmark-link">
 <img class="main-header__wordmark-image" src="img/logo-cat-energy.svg" width="101" height="18" alt="Торговая марка Cat Energy">
         </a>
-          <nav class="navigation">
+          <nav class="navigation navigation--opened">
           <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-<ul class="navigation__list navigation__list--hidden">
+<ul class="navigation__list">
 <li class="navigation__item">
   <a class="navigation__link" href="index.html">
     Главная
@@ -31,12 +31,13 @@
     </a>
   </li>
   <li class="navigation__item">
-    <a class="navigation__link" href="form.html">
+    <a class="navigation__link navigation__link--main" href="form.html">
       Подбор программы
       </a>
   </li>
   </ul>
           </nav>
+          </div>
     </header>
 <main class="form">
   <div class="form__title-container">
@@ -72,7 +73,7 @@
           </li>
           <li class="ckeckbox__item">
             <input class="checkbox__input"  type="radio" id="get-fat" name="get-fatter">
-            <label class="checkbox__label" for="get-fatter">Набор массы</label>
+            <label class="checkbox__label" for="get-fat">Набор массы</label>
           </li>
           <li class="ckeckbox__item">
             <input class="checkbox__input" type="radio" id="not-stated" name="not-stated">
@@ -84,10 +85,12 @@
       </div>
 
 <div class="form-inner form-inner--contacts">
+  <div class="form-inner__wrapper">
   <h2 class="form-inner__name">Контактные данные (владельца кота)</h2>
+  </div>
   <ul class="form-inner__list form-inner__list--contacts">
     <li class="form-inner__item form-inner__item--contacts">
-  <label class="form-inner__label" for="email"> E-mail:*
+  <label class="form-inner__label" for="email"> E-&nbsp;mail:*
   </label>
   <input class="form-inner__input" id="email" type="email" placeholder="kuklachev@gmail.com">
   </li>
@@ -100,17 +103,21 @@
   </div>
 
   <div class="form-inner form-inner--comments">
+    <div class="form-inner__wrapper">
     <label class="form-inner__label form-inner__label--comments" for="comments"> Комментарий
     </label>
+    </div>
     <input class="form-inner__input form-inner__input--comments" id="comments" type="text" placeholder="Расскажите обо всех повадках кота">
     </div>
 
     <fieldset class="checkbox checkbox--food">
+      <div class="form-inner__wrapper">
       <legend class="checkbox__legend">Дополнительно </legend>
+      </div>
       <ul class="checkbox__list checkbox__list--container">
         <li class="ckeckbox__item checkbox__item--size">
             <input class="checkbox__input" type="checkbox" id="sweetener"  checked>
-            <label class="checkbox__label" for="swetener">Сахарозаменитель</label>
+            <label class="checkbox__label" for="sweetener">Сахарозаменитель</label>
           </li>
           <li class="ckeckbox__item checkbox__item--size">
             <input class="checkbox__input" type="checkbox" id="water">
@@ -135,35 +142,38 @@
         </div>
   </form>
   <section class="contacts contacts--color">
-      <div class="contacts__adress">
-      <h2 class="visually-hidden">Адрес компании</h2>
-      <p class="contacts__text">Приглашаем к сотрудничеству дилеров!
-        </p>
-        <p class="contacts__street">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
+    <div class="container">
+    <div class="contacts__adress">
+    <h2 class="visually-hidden">Адрес компании</h2>
+    <p class="contacts__text">Приглашаем к сотрудничеству дилеров!
+      </p>
+      <p class="contacts__street">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
+      </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1116.5053138150024!2d30.32172905936907!3d59.938771019551666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sbe!4v1692718348126!5m2!1sru!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-      </section>
+    </section>
 </main>
 <footer class="main-footer">
-
+  <div class="container">
   <a class="main-header__wordmark-link main-header__wordmark-link--footer" href="index.html">
   <img class="main-header__wordmark-image main-header__wordmark-image--footer" src="img/logo-cat-energy.svg" width="128" height="24">
         </a>
 <div class="social">
-    <ul class="social__list">
-      <li class="social__item">
-        <a class="social__link social__link--vkontakte" href=""> </a>
-        <span class="visually-hidden">Вконтакте</span>
-        </li>
+      <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--Youtube" href=""> </a>
-          <span class="visually-hidden">Youtube</span>
+          <a class="social__link social__link--vkontakte" href=""> </a>
+          <span class="visually-hidden">Вконтакте</span>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegramm" href=""> </a>
-            <span class="visually-hidden">Телеграмм</span>
+            <a class="social__link social__link--Youtube" href=""> </a>
+            <span class="visually-hidden">Youtube</span>
             </li>
-      </ul>
-      </div>
+            <li class="social__item">
+              <a class="social__link social__link--telegramm" href=""> </a>
+              <span class="visually-hidden">Телеграмм</span>
+              </li>
+        </ul>
+        </div>
 
   <div class="main-footer__copyright copyright">
     <a class="copyright__wordmark" href="https://htmlacademy.ru/study">
@@ -172,6 +182,7 @@
     <a class="copyright__logo" href="https://htmlacademy.ru/study">
       <img class="copyright__image" src="img/html-academy-logo.svg" width="27" height="34" alt="Логотип HTML Academy.">
     </a>
+  </div>
   </div>
 </footer>
 </div>
