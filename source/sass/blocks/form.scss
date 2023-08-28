@@ -1,4 +1,4 @@
-/*.form {
+.form__container {
   width: 280px;
   margin: 0 auto;
 
@@ -9,7 +9,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
   }
-} */
+}
 
 .form__title-container {
   display: flex;

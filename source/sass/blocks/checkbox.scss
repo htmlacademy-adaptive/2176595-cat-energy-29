@@ -58,10 +58,29 @@
   line-height: 26px;
   margin: 0 0 36px 0;
   padding: 0;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 20px 0 0 0 #ffffff, -20px 0 0 0 #ffffff;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    border-bottom: 2px solid #68b738;
+    right: calc(100% + 20px);
+    box-shadow: 100vw 0 0 0 #68b738;
+    top: 50%;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    box-shadow: 40px 0 0 0 #ffffff, -40px 0 0 0 #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-shadow: 40px 0 0 0 #ffffff, -40px 0 0 0 #ffffff;
   }
 }
 

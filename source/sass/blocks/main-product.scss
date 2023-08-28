@@ -8,11 +8,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 60px;
+    row-gap: 141px;
   }
 }
 
 .main-product__item {
   padding: 20px 0 25px 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -142,5 +144,18 @@
   .main-product__characteristic-wrapper {
     width: 169px;
     margin-bottom: 10px;
+  }
+}
+
+.main-product__image {
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    top: -80px;
+    right: 19%;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 15%;
   }
 }

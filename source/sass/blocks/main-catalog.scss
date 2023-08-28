@@ -21,14 +21,14 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 65px 0 84px 0;
+    margin: 65px 0 165px 0;
     width: 450px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin-top: 74px;
   }
 }
 

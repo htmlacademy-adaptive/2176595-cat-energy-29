@@ -27,6 +27,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
+    padding: 77px 61px 59px 52px;
   }
 }
 
@@ -39,16 +40,52 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
+  margin-left: 71px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #68b738;
+    left: -70px;
+    top: -13px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     margin: 0;
     margin-bottom: 24px;
     width: 250px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #68b738;
+      left: 386px;
+      top: 30px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 73px;
+    margin-left: 162px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #68b738;
+      left: -162px;
+      top: -40px;
+    }
   }
 }
 
@@ -61,12 +98,32 @@
   margin: 0;
   margin-bottom: 42px;
   width: 227px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 240px;
+    height: 1px;
+    background-color: #d9d9d9;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -26px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 340px;
     margin-bottom: 52px;
     font-size: 16px;
     line-height: 24px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
   }
 }
 
@@ -82,4 +139,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+}
+
+.nutrition-programm__link:active {
+  opacity: 0.3;
 }

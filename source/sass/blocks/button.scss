@@ -11,31 +11,36 @@
   cursor: pointer;
   width: 280px;
   padding: 10px 0;
-}
 
-
-@media (min-width: $tablet-width) {
-  .button {
+  @media (min-width: $tablet-width) {
     width: 244px;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .button--programm-select {
-    margin-left: 90px;
-    margin-bottom: 526px;
-  }
-}
-
-
-@media (min-width: $desktop-width) {
-  .button {
+  @media (min-width: $desktop-width) {
     width: 249px;
     font-size: 20px;
     line-height: 20px;
   }
+}
 
-  .button--programm-select {
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--programm-select {
+  @media (min-width: $tablet-width) {
+    margin-left: 90px;
+    margin-bottom: 526px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 200px;
   }
 }
@@ -67,4 +72,13 @@
   @media (min-width: $desktop-width) {
     width: 169px;
   }
+}
+
+.button--extra:hover {
+  background-color: #ebebeb;
+}
+
+.button--extra:active {
+  color: rgba(68, 68, 68, 0.3);
+  background-color: #ebebeb;
 }
