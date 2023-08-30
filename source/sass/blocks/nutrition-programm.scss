@@ -35,11 +35,30 @@
 
   @media (min-width: $tablet-width) {
     padding: 77px 316px 57px 52px;
+    position: relative;
+
+    &::after {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      left: 475px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
     padding: 77px 61px 59px 52px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #68b738;
+      left: 20px;
+      top: 24px;
+    }
   }
 }
 
@@ -54,9 +73,18 @@
     height: 50px;
     z-index: 2;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 140px;
+      height: 194px;
+      top: 81px;
+      left: 475px;
+    }
+  }
 }
 
-.nutrition-rogramm__item--pro {
+.nutrition-programm__item--pro {
   &::before {
     position: absolute;
     content: "";
@@ -66,6 +94,15 @@
     width: 67px;
     height: 28px;
     z-index: 2;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 216px;
+      height: 112px;
+      top: 235px;
+      left: 411px;
+    }
   }
 }
 
