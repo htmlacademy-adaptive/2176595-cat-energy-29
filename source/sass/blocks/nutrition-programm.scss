@@ -20,6 +20,18 @@
 .nutrition-programm__item {
   background-color: #f2f2f2;
   padding: 30px 33px 22px 20px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #68b738;
+    left: 20px;
+    top: 24px;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 77px 316px 57px 52px;
@@ -28,6 +40,32 @@
   @media (min-width: $desktop-width) {
     width: 570px;
     padding: 77px 61px 59px 52px;
+  }
+}
+
+.nutrition-programm__item--slim {
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/stack.svg#cat-logo-thin");
+    top: 21px;
+    left: 27px;
+    width: 36px;
+    height: 50px;
+    z-index: 2;
+  }
+}
+
+.nutrition-rogramm__item--pro {
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/stack.svg#cat-logo-fat");
+    top: 35px;
+    left: 13px;
+    width: 67px;
+    height: 28px;
+    z-index: 2;
   }
 }
 
@@ -43,49 +81,16 @@
   margin-left: 71px;
   position: relative;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #68b738;
-    left: -70px;
-    top: -13px;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 36px;
     margin: 0;
     margin-bottom: 24px;
     width: 250px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      background-color: #68b738;
-      left: 386px;
-      top: 30px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 73px;
     margin-left: 162px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background-color: #68b738;
-      left: -162px;
-      top: -40px;
-    }
   }
 }
 

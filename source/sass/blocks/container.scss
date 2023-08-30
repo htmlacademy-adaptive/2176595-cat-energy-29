@@ -28,14 +28,3 @@
   }
 }
 
-.container--hero {
-  background-color: #68b738;
-  width: 100%;
-  margin-bottom: 135px;
-
-  @media (min-width: $tablet-width) {
-    background-color: #ffffff;
-    color: #000000;
-    margin: 0;
-  }
-}

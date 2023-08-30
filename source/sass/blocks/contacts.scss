@@ -1,5 +1,26 @@
 .contacts {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacts__map {
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
+
+.contacts__image {
+  margin: 0 auto;
+  display: block;
+}
+
+.contacts__map-link {
+  position: absolute;
+  top: 0;
 }
 
 .contacts--color {
@@ -18,9 +39,9 @@
 
     @media (min-width: $desktop-width) {
       width: 565px;
-      margin: 95px 0 106px 110px;
       z-index: 3;
       position: absolute;
+      top: 95px;
     }
   }
 }
