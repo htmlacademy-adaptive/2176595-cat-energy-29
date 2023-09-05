@@ -17,9 +17,9 @@
           <source media="(min-width: 768px)" srcset="img/logo-tablet@1x.svg, img/logo-tablet@2x.svg 2x" width="60" height="50">
         <img class="main-header__logo-image" src="img/logo-mobile@1x.svg" srcset="img/logo-mobile@2x.svg" width="33" height="38" alt="Логотип Кэт Энерджи.">
         </picture>
-       </a>
+        </a>
         <a class="main-header__wordmark-link">
-<img class="main-header__wordmark-image" src="img/logo-cat-energy.svg" width="101" height="18" alt="Торговая марка Cat Energy">
+          <span class="visually-hidden"> Торговая марка Cat Energy </span>
         </a>
           <nav class="navigation navigation--closed navigation--nojs">
           <button class="navigation__toggle" type="button">
@@ -91,16 +91,26 @@
 <h2 class="advantages__title">Как это работает
   </h2>
   <ul class="advantages__list">
-    <li class="advantages__item advantages__item--healthy">
-      Функциональное питание содержит только полезные питательные вещества.
+    <li class="advantages__item">
+<div class="advantages__image advantages__image--healthy"> </div>
+      <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
+      <div class="advantages__counter"> </div>
+    </li>
+      <li class="advantages__item">
+        <div class="advantages__image advantages__image--fast"> </div>
+        <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
       </li>
-      <li class="advantages__item advantages__item--fast"> Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-      </li>
-      <li class="advantages__item advantages__item--comfort">
+      <li class="advantages__item">
+        <div class="advantages__image advantages__image--comfort"> </div>
+        <p class="advantages__description">
       Замените один-два приема обычной еды на наше функциональное питание.
+        </p>
       </li>
-      <li class="advantages__item advantages__item--time">
+      <li class="advantages__item">
+        <div class="advantages__image advantages__image--time"> </div>
+        <p class="advantages__description">
         Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+        </p>
       </li>
     </ul>
     </div>
@@ -126,9 +136,10 @@
             </ul>
             </div>
             <div class="example__cats">
-               <img class="example__fat-cat" src="img/fat-cat@1x.jpg" srcset="img/fat-cat@2x.jpg" alt="Фото толстого кота.">
-            </div>
-          </section>
+                <img class="example__fat-cat" src="img/cat@1x.jpg" srcset="img/cat@2x.jpg" alt="Фото худого кота.">
+          </div>
+          </div>
+        </section>
           <section class="contacts">
             <div class="contacts__map">
                 <picture>
@@ -136,9 +147,9 @@
               <source media="(min-width: 768px)" srcset="../img/map-tablet@1x.jpg 1x, ../img/map-tablet@2x.jpg 2x" type="image/jpg" width="768" height="400">
             <img class="contacts__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта с местоположением магазина Cat Energy" width="320" height="362">
             </picture>
-            <!--
+
             <iframe class="contacts__map-link" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1116.5053138150024!2d30.32172905936907!3d59.938771019551666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sbe!4v1692718348126!5m2!1sru!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            -->
+
           </div>
             <div class="container">
             <div class="contacts__adress">
@@ -152,8 +163,9 @@
         </main>
         <footer class="main-footer">
 <div class="container">
+  <div class="main-footer__wrapper">
             <a class="main-header__wordmark-link main-header__wordmark-link--footer" href="index.html">
-            <img class="main-header__wordmark-image main-header__wordmark-image--footer" src="img/logo-cat-energy.svg" width="128" height="24" alt="Лого">
+              <span class="visually-hidden"> Торговая марка Cat Energy </span>
                   </a>
 <div class="social">
               <ul class="social__list">
@@ -162,7 +174,7 @@
                   <span class="visually-hidden">Вконтакте</span>
                   </li>
                   <li class="social__item">
-                    <a class="social__link social__link--Youtube" href=""> </a>
+                    <a class="social__link social__link--youtube" href=""> </a>
                     <span class="visually-hidden">Youtube</span>
                     </li>
                     <li class="social__item">
@@ -177,8 +189,9 @@
                 HTML Academy
               </a>
               <a class="copyright__logo" href="https://htmlacademy.ru/study">
-                <img class="copyright__image" src="img/html-academy-logo.svg" width="27" height="34" alt="Логотип HTML Academy.">
+                <span class="visually-hidden">Логотип HTML Academy</span>
               </a>
+            </div>
             </div>
             </div>
         </footer>
