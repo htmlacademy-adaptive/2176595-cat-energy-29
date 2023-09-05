@@ -105,6 +105,60 @@
   }
 }
 
+.form-inner__label--email {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    mask-image: url("../img/stack.svg#email");
+    width: 21px;
+    height: 20px;
+    background-color: #000000;
+    left: 247px;
+    z-index: 2;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: 596px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      left: 530px;
+    }
+  }
+}
+
+.form-inner__label--telephone {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    mask-image: url("../img/stack.svg#telephone");
+    width: 21px;
+    height: 20px;
+    background-color: #000000;
+    left: 247px;
+    z-index: 2;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: 596px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      left: 530px;
+    }
+  }
+}
+
 .form-inner__input {
   color: #444444;
   font-family: "Oswald", sans-serif;
@@ -116,6 +170,11 @@
   border: 0;
   outline: 1px solid #e7e7e7;
   width: 100%;
+  position: relative;
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 11px 0 11px 20px;
@@ -140,6 +199,9 @@
   box-shadow: 20px 0 0 0 #ffffff, -20px 0 0 0 #ffffff;
   background-color: #ffffff;
   position: relative;
+  width: 121px;
+  text-transform: none;
+  color: #000000;
 
   &::after {
     position: absolute;
@@ -148,19 +210,23 @@
     border-bottom: 2px solid #68b738;
     right: calc(100% + 20px);
     box-shadow: 100vw 0 0 0 #68b738;
-    top: 50%;
+    top: 15px;
     z-index: -1;
   }
 
   @media (min-width: $tablet-width) {
     box-shadow: 40px 0 0 0 #ffffff, -40px 0 0 0 #ffffff;
     background-color: #ffffff;
+    width: 183px;
+
+    &::after {
+      top: 22px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-
   }
 }
 

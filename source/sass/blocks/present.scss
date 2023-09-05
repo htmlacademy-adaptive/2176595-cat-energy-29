@@ -48,6 +48,18 @@
   text-align: center;
   width: 161px;
   margin: 0;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/stack.svg#present");
+    width: 78px;
+    height: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -116px;
+  }
 
   @media (min-width: $tablet-width) {
     text-align: left;

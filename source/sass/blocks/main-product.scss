@@ -100,6 +100,18 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 8px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/stack.svg#plus");
+    width: 30px;
+    height: 30px;
+    top: -53px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   @media (min-width: $tablet-width) {
     width: 135px;
@@ -107,6 +119,18 @@
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 23px;
+
+    &::after {
+      width: 60px;
+      height: 60px;
+      top: -110px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: -100px;
+    }
   }
 }
 
@@ -165,8 +189,10 @@
 
   @media (min-width: $tablet-width) {
     width: 250px;
-    margin-bottom: 12px;
     position: relative;
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 4px;
+    margin-bottom: 7px;
 
     &::after {
       position: absolute;

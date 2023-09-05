@@ -14,6 +14,14 @@
 
   @media (min-width: $desktop-width) {
     background: linear-gradient(to right, transparent, transparent 50%, #68b738 50%, #68b738 100%);
+    background-image: url("../img/hero-background@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-background@2x.jpg");
+      background-size: 1220px auto;
+    }
   }
 }
 
@@ -64,17 +72,6 @@
     left: 45.6%;
   }
 }
-
-/*
-  @media (min-width: $desktop-width) {
-    margin-top: 110px;
-    margin-left: 59px;
-    gap: 100px;
-    background-color: #ffffff;
-    color: #111111;
-  }
-}
-*/
 
 .hero__main-heading {
   font-family: "Oswald", sans-serif;

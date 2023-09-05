@@ -32,7 +32,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 25px 0 25px 28px;
+    padding: 25px 227px 25px 28px;
+  }
+}
+
+.checkbox__item {
+  display: flex;
+  gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
   }
 }
 
@@ -43,6 +52,8 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  align-items: center;
+  display: flex;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -84,21 +95,66 @@
   }
 }
 
-.checkbox__item {
-  margin-bottom: 13px;
-}
-
 .checkbox__item--size {
   @media (min-width: $tablet-width) {
     width: max-content;
   }
 }
 
-
-.checkbox__input {
-  margin-right: 15px;
+.checkbox__input[type="radio"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0;
+  border: 1px solid  #cdcdcd;
 
   @media (min-width: $tablet-width) {
     margin-right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.checkbox__input[type="checkbox"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.checkbox__input[type="radio"]:checked {
+  background-image: url("../img/stack.svg#radio");
+  width: 30px;
+  height: 30px;
+  background-size: 13px 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-size: 18px 18px;
+  }
+}
+
+.checkbox__input[type="checkbox"]:checked {
+  background-image: url("../img/stack.svg#tick");
+  width: 30px;
+  height: 30px;
+  background-size: 19px 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-size: 26px 26px;
   }
 }

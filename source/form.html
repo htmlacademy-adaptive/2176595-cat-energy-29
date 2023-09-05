@@ -10,18 +10,22 @@
     <header class="main-header">
       <div class="container container--header">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop@1x.svg, img/logo-desktop@2x.svg 2x" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet@1x.svg, img/logo-tablet@2x.svg 2x" width="60" height="50">
+        <img class="main-header__logo-image" src="img/logo-mobile@1x.svg" srcset="img/logo-mobile@2x.svg" width="33" height="38" alt="Логотип Кэт Энерджи.">
+        </picture>
         </a>
         <a class="main-header__wordmark-link">
-<img class="main-header__wordmark-image" src="img/logo-cat-energy.svg" width="101" height="18" alt="Торговая марка Cat Energy">
+          <span class="visually-hidden"> Торговая марка Cat Energy </span>
         </a>
-          <nav class="navigation navigation--opened">
+          <nav class="navigation navigation--closed navigation--nojs">
           <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
 <ul class="navigation__list">
 <li class="navigation__item">
-  <a class="navigation__link" href="index.html">
+  <a class="navigation__link navigation__link--main" href="index.html">
     Главная
     </a>
   </li>
@@ -31,7 +35,7 @@
     </a>
   </li>
   <li class="navigation__item">
-    <a class="navigation__link navigation__link--main" href="form.html">
+    <a class="navigation__link" href="form.html">
       Подбор программы
       </a>
   </li>
@@ -67,15 +71,15 @@
     </ul>
     <fieldset class="checkbox">
       <ul class="checkbox__list checkbox__list--programm">
-        <li class="ckeckbox__item">
+        <li class="checkbox__item">
             <input class="checkbox__input" type="radio" id="reduce-weight" name="reduce-weight" checked>
             <label class="checkbox__label" for="reduce-weight">Похудение</label>
           </li>
-          <li class="ckeckbox__item">
+          <li class="checkbox__item">
             <input class="checkbox__input"  type="radio" id="get-fat" name="get-fatter">
             <label class="checkbox__label" for="get-fat">Набор массы</label>
           </li>
-          <li class="ckeckbox__item">
+          <li class="checkbox__item">
             <input class="checkbox__input" type="radio" id="not-stated" name="not-stated">
             <label class="checkbox__label" for="not-stated">Не знаю (нужен ваш совет)</label>
           </li>
@@ -88,12 +92,12 @@
   <h2 class="form-inner__name">Контактные данные (владельца кота)</h2>
   <ul class="form-inner__list form-inner__list--contacts">
     <li class="form-inner__item form-inner__item--contacts">
-  <label class="form-inner__label" for="email"> E-&nbsp;mail:*
+  <label class="form-inner__label form-inner__label--email" for="email" > E-&nbsp;mail:*
   </label>
   <input class="form-inner__input" id="email" type="email" placeholder="kuklachev@gmail.com">
   </li>
   <li class="form-inner__item form-inner__item--contacts">
-  <label class="form-inner__label" for="phone"> Телефон:*
+  <label class="form-inner__label form-inner__label--telephone" for="phone"> Телефон:*
   </label>
   <input class="form-inner__input" id="phone" type="email" placeholder="8 (960) 900-60-90">
   </li>
@@ -110,19 +114,19 @@
     <fieldset class="checkbox checkbox--food">
       <legend class="checkbox__legend">Дополнительно </legend>
       <ul class="checkbox__list checkbox__list--container">
-        <li class="ckeckbox__item checkbox__item--size">
+        <li class="checkbox__item checkbox__item--size">
             <input class="checkbox__input" type="checkbox" id="sweetener"  checked>
             <label class="checkbox__label" for="sweetener">Сахарозаменитель</label>
           </li>
-          <li class="ckeckbox__item checkbox__item--size">
+          <li class="checkbox__item checkbox__item--size">
             <input class="checkbox__input" type="checkbox" id="water">
             <label class="checkbox__label" for="water">Питьевая вода</label>
           </li>
-          <li class="ckeckbox__item checkbox__item--size">
+          <li class="checkbox__item checkbox__item--size">
             <input class="checkbox__input" type="checkbox" id="milk">
             <label class="checkbox__label" for="milk">Молоко</label>
           </li>
-          <li class="ckeckbox__item checkbox__item--size">
+          <li class="checkbox__item checkbox__item--size">
             <input class="checkbox__input" type="checkbox" id="vitamins">
             <label class="checkbox__label" for="vitamins">Витамины</label>
           </li>
@@ -136,7 +140,17 @@
         <p class="form-inner__comment"> * — Обязательные поля </p>
         </div>
   </form>
-  <section class="contacts contacts--color">
+  <section class="contacts">
+    <div class="contacts__map">
+        <picture>
+      <source media="(min-width: 1440px)" srcset="../img/map-desktop@1x.jpg 1x, ../img/map-desktop@2x.jpg 2x" type="image/jpg" width="1440" height="400">
+      <source media="(min-width: 768px)" srcset="../img/map-tablet@1x.jpg 1x, ../img/map-tablet@2x.jpg 2x" type="image/jpg" width="768" height="400">
+    <img class="contacts__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта с местоположением магазина Cat Energy" width="320" height="362">
+    </picture>
+
+    <iframe class="contacts__map-link" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1116.5053138150024!2d30.32172905936907!3d59.938771019551666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sbe!4v1692718348126!5m2!1sru!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </div>
     <div class="container">
     <div class="contacts__adress">
     <h2 class="visually-hidden">Адрес компании</h2>
@@ -144,41 +158,42 @@
       </p>
       <p class="contacts__street">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
       </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1116.5053138150024!2d30.32172905936907!3d59.938771019551666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sbe!4v1692718348126!5m2!1sru!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 </main>
 <footer class="main-footer">
   <div class="container">
-  <a class="main-header__wordmark-link main-header__wordmark-link--footer" href="index.html">
-  <img class="main-header__wordmark-image main-header__wordmark-image--footer" src="img/logo-cat-energy.svg" width="128" height="24" alt="Лого">
-        </a>
-<div class="social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href=""> </a>
-          <span class="visually-hidden">Вконтакте</span>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--Youtube" href=""> </a>
-            <span class="visually-hidden">Youtube</span>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegramm" href=""> </a>
-              <span class="visually-hidden">Телеграмм</span>
-              </li>
-        </ul>
-        </div>
+    <div class="main-footer__wrapper">
+              <a class="main-header__wordmark-link main-header__wordmark-link--footer" href="index.html">
+                <span class="visually-hidden"> Торговая марка Cat Energy </span>
+                    </a>
+  <div class="social">
+                <ul class="social__list">
+                  <li class="social__item">
+                    <a class="social__link social__link--vkontakte" href=""> </a>
+                    <span class="visually-hidden">Вконтакте</span>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link social__link--youtube" href=""> </a>
+                      <span class="visually-hidden">Youtube</span>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link social__link--telegramm" href=""> </a>
+                        <span class="visually-hidden">Телеграмм</span>
+                        </li>
+                  </ul>
+                  </div>
 
-  <div class="main-footer__copyright copyright">
-    <a class="copyright__wordmark" href="https://htmlacademy.ru/study">
-      HTML Academy
-    </a>
-    <a class="copyright__logo" href="https://htmlacademy.ru/study">
-      <img class="copyright__image" src="img/html-academy-logo.svg" width="27" height="34" alt="Логотип HTML Academy.">
-    </a>
-  </div>
-  </div>
-</footer>
+              <div class="main-footer__copyright copyright">
+                <a class="copyright__wordmark" href="https://htmlacademy.ru/study">
+                  HTML Academy
+                </a>
+                <a class="copyright__logo" href="https://htmlacademy.ru/study">
+                  <span class="visually-hidden">Логотип HTML Academy</span>
+                </a>
+              </div>
+              </div>
+              </div>
+          </footer>
 </body>
 </html>

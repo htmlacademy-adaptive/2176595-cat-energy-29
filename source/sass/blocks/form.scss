@@ -22,13 +22,15 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
     gap: 54px;
-    width: 708px;
+    width: 628px;
+    margin-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 68px;
     gap: 55px;
     width: 1220px;
+    margin-top: 74px;
   }
 }
 

@@ -45,6 +45,14 @@
 .navigation__link {
   text-decoration: none;
   color: #000000;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .navigation__link--main {
@@ -79,7 +87,7 @@
   color: #000000;
   border: 0;
   position: absolute;
-  right: 0;
+  right: -24px;
   top: -12px;
 
   &:hover,

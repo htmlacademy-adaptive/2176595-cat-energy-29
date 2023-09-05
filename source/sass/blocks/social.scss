@@ -3,6 +3,17 @@
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 120px;
+    border: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 376px;
+  }
 }
 
 .social__list {
@@ -17,6 +28,37 @@
 .social__link {
   width: 28px;
   height: 22px;
-  display: flex;
+  display: block;
   outline: 2px solid #008000;
+
+  &:hover,
+  &:focus {
+    background-color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.25;
+  }
+}
+
+
+.social__link--vkontakte {
+  width: 28px;
+  height: 22px;
+  mask-image: url("../img/stack.svg#vkontakte");
+  background-color: #666666;
+}
+
+.social__link--youtube {
+  width: 28px;
+  height: 22px;
+  mask-image: url("../img/stack.svg#youtube");
+  background-color: #666666;
+}
+
+.social__link--telegramm {
+  width: 28px;
+  height: 22px;
+  mask-image: url("../img/stack.svg#telegramm");
+  background-color: #666666;
 }
