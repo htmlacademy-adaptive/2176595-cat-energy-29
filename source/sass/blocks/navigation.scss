@@ -28,8 +28,8 @@
     justify-content: space-between;
     width: 476px;
     padding: 0;
-    color: #ffffff;
-    background-color: rgba(104, 183, 56, 0.85);
+    color: #000000;
+    background-color: transparent;
   }
 }
 
@@ -53,6 +53,12 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $desktop-width) {
+    color: #000000;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .navigation__link--main {
@@ -73,8 +79,14 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-      background-color: #ffffff;
+      background-color: #000000;
     }
+  }
+}
+
+.navigation__link--color {
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
   }
 }
 

@@ -16,8 +16,9 @@
   flex-direction: column;
   gap: 37px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 36px;
   width: 280px;
+  margin-top: 28px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
@@ -132,13 +133,4 @@
     gap: 80px;
     margin-bottom: 80px;
   }
-}
-
-.form-inner__comment {
-  color: #000000;
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-  margin: 0;
 }

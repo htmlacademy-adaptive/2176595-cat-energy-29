@@ -34,7 +34,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 77px 316px 57px 52px;
+    padding: 83px 316px 64px 52px;
     position: relative;
 
     &::after {
@@ -185,6 +185,7 @@
 
   @media (min-width: $desktop-width) {
     width: 457px;
+    margin-bottom: 33px;
   }
 }
 
@@ -197,6 +198,7 @@
   line-height: 16px;
   cursor: pointer;
   position: relative;
+  text-transform: uppercase;
 
   &::after {
     position: absolute;
@@ -214,6 +216,12 @@
     &::after {
       right: -50px;
       top: 10px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      right: -58px;
     }
   }
 }

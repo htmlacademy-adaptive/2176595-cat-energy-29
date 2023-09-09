@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
 
-    <header class="main-header">
+    <header class="main-header main-header--color">
       <div class="container container--header">
       <a class="main-header__logo" href="index.html">
         <picture>
@@ -26,17 +26,17 @@
           </button>
 <ul class="navigation__list">
 <li class="navigation__item">
-  <a class="navigation__link navigation__link--main" href="index.html">
+  <a class="navigation__link navigation__link--main navigation__link--color" href="index.html">
     Главная
     </a>
   </li>
   <li class="navigation__item">
-    <a class="navigation__link" href="catalog.html">
+    <a class="navigation__link navigation__link--color" href="catalog.html">
       Каталог продукции
     </a>
   </li>
   <li class="navigation__item">
-    <a class="navigation__link" href="form.html">
+    <a class="navigation__link navigation__link--color" href="form.html">
       Подбор программы
       </a>
   </li>
@@ -90,23 +90,18 @@
 <h2 class="advantages__title">Как это работает
   </h2>
   <ul class="advantages__list">
-    <li class="advantages__item">
-<div class="advantages__image advantages__image--healthy"> </div>
+    <li class="advantages__item advantages__item--healthy">
       <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
-      <div class="advantages__counter"> </div>
     </li>
-      <li class="advantages__item">
-        <div class="advantages__image advantages__image--fast"> </div>
+      <li class="advantages__item advantages__item--fast">
         <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
       </li>
-      <li class="advantages__item">
-        <div class="advantages__image advantages__image--comfort"> </div>
+      <li class="advantages__item advantages__item--comfort">
         <p class="advantages__description">
       Замените один-два приема обычной еды на наше функциональное питание.
         </p>
       </li>
-      <li class="advantages__item">
-        <div class="advantages__image advantages__image--time"> </div>
+      <li class="advantages__item advantages__item--time">
         <p class="advantages__description">
         Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
         </p>
@@ -118,8 +113,10 @@
           <section class="example">
             <div class="container">
             <h2 class="example__title">Живой пример</h2>
+
+            <div class="example__wrapper">
           <div class="example__container">
-            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
             <ul class="example__list">
               <li class="example__item">
                 <h3 class="example__name"> cнижение веса</h3>
@@ -134,30 +131,48 @@
               </li>
             </ul>
             </div>
+
             <div class="example__cats">
-                <img class="example__fat-cat" src="img/cat@1x.jpg" srcset="img/cat@2x.jpg" alt="Фото худого кота.">
-          </div>
+              <div class="example__fat-cat">
+              <picture>
+                <source media="(min-width: 768px)" srcset="../img/fat-cat-tablet@1x.png 1x, ../img/fat-cat-tablet@2x.png 2x" type="image/png" width="560" height="512">
+                <img class="example__fat-cat-image" src="img/fat-cat@1x.jpg 1x" srcset="img/fat-cat@2x.jpg 2x" alt="Фото толстого котика" width="280" height="256">
+                </picture>
+                </div>
+
+                <div class="example__cats-button">
+                  <button class="example__button" type="button"> </button>
+                  </div>
+
+                <div class="example__slim-cat">
+                  <picture>
+                <source media="(min-width: 768px)" srcset="../img/slim-cat-tablet@1x.png 1x, ../img/slim-cat-tablet@2x.png 2x" type="image/png" width="560" height="512">
+                    <img class="example__slim-cat-image" src="img/slim-cat@1x.jpg 1x" srcset="img/slim-cat@2x.jpg 2x" alt="Фото худорого котика" width="280" height="256">
+                  </picture>
+                  </div>
+                  </div>
+              </div>
           </div>
         </section>
           <section class="contacts">
-            <div class="contacts__map">
-                <picture>
-              <source media="(min-width: 1440px)" srcset="../img/map-desktop@1x.jpg 1x, ../img/map-desktop@2x.jpg 2x" type="image/jpg" width="1440" height="400">
-              <source media="(min-width: 768px)" srcset="../img/map-tablet@1x.jpg 1x, ../img/map-tablet@2x.jpg 2x" type="image/jpg" width="768" height="400">
-            <img class="contacts__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта с местоположением магазина Cat Energy" width="320" height="362">
-            </picture>
-
-            <iframe class="contacts__map-link" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1116.5053138150024!2d30.32172905936907!3d59.938771019551666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sbe!4v1692718348126!5m2!1sru!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-          </div>
             <div class="container">
             <div class="contacts__adress">
             <h2 class="visually-hidden">Адрес компании</h2>
-            <p class="contacts__text">Приглашаем к сотрудничеству дилеров!
+            <p class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!
               </p>
               <p class="contacts__street">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
               </div>
                 </div>
+                <div class="contacts__map">
+                  <picture>
+                <source media="(min-width: 1440px)" srcset="../img/map-desktop@1x.jpg 1x, ../img/map-desktop@2x.jpg 2x" type="image/jpg" width="1440" height="400">
+                <source media="(min-width: 768px)" srcset="../img/map-tablet@1x.jpg 1x, ../img/map-tablet@2x.jpg 2x" type="image/jpg" width="768" height="400">
+              <img class="contacts__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта с местоположением магазина Cat Energy" width="320" height="362">
+              </picture>
+
+              <iframe class="contacts__map-link" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1116.5053138150024!2d30.32172905936907!3d59.938771019551666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sbe!4v1692718348126!5m2!1sru!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
             </section>
         </main>
         <footer class="main-footer">

@@ -23,6 +23,24 @@
   }
 }
 
+.main-header--color {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    color: white;
+
+    &::after {
+      background-color: #68b738;
+      position: absolute;
+      content: "";
+      width: 720px;
+      height: 1216px;
+      left: 50%;
+      z-index: -1;
+      box-shadow: 700px 0 0 0 #68b738;
+    }
+  }
+}
+
 .main-header__logo {
   display: block;
   width: 33px;
@@ -40,6 +58,7 @@
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 50px;
+    margin-right: 11px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,15 +89,23 @@
     opacity: 0.6;
   }
 
+  @media (min-width: $tablet-width) {
+    margin-right: 95px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-right: 408px;
+    margin-right: 538px;
+    width: 118px;
+    height: 21px;
   }
 }
 
 .main-header__wordmark-link--footer {
-  margin: 0;
   width: 128px;
   height: 24px;
+  margin: auto;
+  display: block;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-right: 160px;

@@ -6,6 +6,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 54px;
+    padding-bottom: 66px;
   }
 }
 
