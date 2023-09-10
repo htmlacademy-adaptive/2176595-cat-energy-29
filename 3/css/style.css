@@ -28,7 +28,7 @@
 @media (min-width: 1440px) {
   .main-header--color {
     position: relative;
-    color: white;
+    color: #ffffff;
   }
   .main-header--color::after {
     background-color: #68b738;
@@ -39,6 +39,24 @@
     left: 50%;
     z-index: -1;
     box-shadow: 700px 0 0 0 #68b738;
+  }
+}
+
+.main-header--line {
+  position: relative;
+}
+.main-header--line::after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  background-color: #d9d9d9;
+  box-shadow: 100vw 0 0 0 #d9d9d9;
+  bottom: 0;
+  height: 1px;
+}
+@media (min-width: 768px) {
+  .main-header--line::after {
+    display: none;
   }
 }
 
@@ -110,6 +128,7 @@
 @media (min-width: 768px) {
   .main-header__wordmark-link--footer {
     margin-right: 160px;
+    margin-left: 0;
   }
 }
 @media (min-width: 1440px) {
@@ -442,7 +461,7 @@
     width: 134px;
     height: 56px;
     top: 67px;
-    left: 67px;
+    left: 34px;
   }
 }
 
@@ -900,7 +919,8 @@
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
-    width: 96px;
+    width: 130px;
+    margin-top: -8px;
   }
 }
 @media (min-width: 1440px) {
@@ -1854,8 +1874,8 @@
 
 .copyright__logo {
   display: block;
-  width: 34px;
-  height: 27px;
+  width: 27px;
+  height: 34px;
   -webkit-mask-image: url("../img/stack.svg#copyright-logo");
           mask-image: url("../img/stack.svg#copyright-logo");
   background-color: #444444;
@@ -2040,7 +2060,7 @@
 }
 
 .form-inner--container {
-  gap: 44px;
+  gap: 24px;
 }
 @media (min-width: 768px) {
   .form-inner--container {
@@ -2070,7 +2090,7 @@
 @media (min-width: 768px) {
   .form-inner__list--contacts {
     display: grid;
-    gap: 14px;
+    gap: 20px;
   }
 }
 @media (min-width: 1440px) {
@@ -2088,7 +2108,7 @@
   line-height: 26px;
   margin: 0;
   max-width: 187px;
-  margin-bottom: 49px;
+  margin-bottom: 35px;
   box-shadow: 20px 0 0 0 #ffffff, -20px 0 0 0 #ffffff;
   background-color: #ffffff;
 }
@@ -2100,6 +2120,7 @@
   right: calc(100% + 20px);
   box-shadow: 100vw 0 0 0 #68b738;
   z-index: -1;
+  top: 15px;
 }
 @media (min-width: 768px) {
   .form-inner__name {
@@ -2109,6 +2130,10 @@
     position: relative;
     box-shadow: 40px 0 0 0 #ffffff, -40px 0 0 0 #ffffff;
     background-color: #ffffff;
+    margin-bottom: 76px;
+  }
+  .form-inner__name::after {
+    top: 22px;
   }
 }
 
@@ -2254,6 +2279,7 @@
     box-shadow: 40px 0 0 0 #ffffff, -40px 0 0 0 #ffffff;
     background-color: #ffffff;
     width: 183px;
+    margin-bottom: 87px;
   }
   .form-inner__label--comments::after {
     top: 22px;
@@ -2273,7 +2299,7 @@
 @media (min-width: 768px) {
   .form-inner__input--comments {
     width: 628px;
-    padding: 11px 295px 194px 20px;
+    padding: 11px 295px 134px 20px;
   }
 }
 @media (min-width: 1440px) {
@@ -2294,11 +2320,31 @@
 @media (min-width: 768px) {
   .form-inner__comment {
     margin-top: 14px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
 .checkbox {
-  border: 0;
+  outline: 1px solid #cdcdcd;
+  padding: 0;
+  padding-top: 22px;
+  padding-bottom: 19px;
+  border: none;
+}
+@media (min-width: 768px) {
+  .checkbox {
+    padding: 23px 0 27px 27px;
+  }
+}
+@media (min-width: 1440px) {
+  .checkbox {
+    padding-right: 242px;
+  }
+}
+
+.checkbox--food {
+  outline: none;
   padding: 0;
 }
 
@@ -2313,7 +2359,7 @@
 @media (min-width: 768px) {
   .checkbox__list--container {
     grid-template-columns: min-content min-content;
-    row-gap: 20px;
+    row-gap: 33px;
     column-gap: 123px;
   }
 }
@@ -2322,18 +2368,6 @@
     display: flex;
     width: 1124px;
     justify-content: space-between;
-  }
-}
-
-@media (min-width: 768px) {
-  .checkbox__list--programm {
-    padding: 23px 0 27px 27px;
-    outline: 1px solid #f2f2f2;
-  }
-}
-@media (min-width: 1440px) {
-  .checkbox__list--programm {
-    padding: 25px 227px 25px 28px;
   }
 }
 
@@ -2391,6 +2425,7 @@
     font-size: 36px;
     line-height: 36px;
     box-shadow: 40px 0 0 0 #ffffff, -40px 0 0 0 #ffffff;
+    margin-bottom: 57px;
   }
 }
 @media (min-width: 1440px) {
@@ -2416,7 +2451,6 @@
 }
 @media (min-width: 768px) {
   .checkbox__input[type=radio] {
-    margin-right: 20px;
     width: 40px;
     height: 40px;
   }
@@ -2563,7 +2597,13 @@
 }
 @media (min-width: 1440px) {
   .navigation__link--main::after {
-    background-color: #000000;
+    background-color: #68b738;
+  }
+}
+
+@media (min-width: 1440px) {
+  .navigation__link--line::after {
+    background-color: #ffffff;
   }
 }
 
@@ -2720,6 +2760,20 @@
 .button--extra:active {
   color: rgba(68, 68, 68, 0.3);
   background-color: #ebebeb;
+}
+
+@media (min-width: 768px) {
+  .button--send {
+    width: 282px;
+    font-size: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+@media (min-width: 1440px) {
+  .button--send {
+    width: 570px;
+  }
 }
 
 .container {
