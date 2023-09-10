@@ -79,7 +79,15 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-      background-color: #000000;
+      background-color: #68b738;
+    }
+  }
+}
+
+.navigation__link--line {
+  @media (min-width: $desktop-width) {
+    &::after {
+      background-color: #ffffff;
     }
   }
 }

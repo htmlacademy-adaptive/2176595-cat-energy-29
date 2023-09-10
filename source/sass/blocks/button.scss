@@ -90,3 +90,16 @@
   color: rgba(68, 68, 68, 0.3);
   background-color: #ebebeb;
 }
+
+.button--send {
+  @media (min-width: $tablet-width) {
+    width: 282px;
+    font-size: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}

@@ -1,5 +1,21 @@
 .checkbox {
-  border: 0;
+  outline: 1px solid #cdcdcd;
+  padding: 0;
+  padding-top: 22px;
+  padding-bottom: 19px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 0 27px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 242px;
+  }
+}
+
+.checkbox--food {
+  outline: none;
   padding: 0;
 }
 
@@ -14,7 +30,7 @@
 .checkbox__list--container {
   @media (min-width: $tablet-width) {
     grid-template-columns: min-content min-content;
-    row-gap: 20px;
+    row-gap: 33px;
     column-gap: 123px;
   }
 
@@ -27,12 +43,10 @@
 
 .checkbox__list--programm {
   @media (min-width: $tablet-width) {
-    padding: 23px 0 27px 27px;
-    outline: 1px solid #f2f2f2;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 25px 227px 25px 28px;
+
   }
 }
 
@@ -88,6 +102,7 @@
     font-size: 36px;
     line-height: 36px;
     box-shadow: 40px 0 0 0 #ffffff, -40px 0 0 0 #ffffff;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,7 +125,6 @@
   border: 1px solid  #cdcdcd;
 
   @media (min-width: $tablet-width) {
-    margin-right: 20px;
     width: 40px;
     height: 40px;
   }

@@ -26,7 +26,7 @@
 .main-header--color {
   @media (min-width: $desktop-width) {
     position: relative;
-    color: white;
+    color: #ffffff;
 
     &::after {
       background-color: #68b738;
@@ -37,6 +37,27 @@
       left: 50%;
       z-index: -1;
       box-shadow: 700px 0 0 0 #68b738;
+    }
+  }
+}
+
+
+.main-header--line {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    background-color: #d9d9d9;
+    box-shadow: 100vw 0 0 0 #d9d9d9;
+    bottom: 0;
+    height: 1px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      display: none;
     }
   }
 }
@@ -109,6 +130,7 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 160px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
