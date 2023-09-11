@@ -122,6 +122,10 @@
     background-color: #000000;
     left: 247px;
     z-index: 2;
+
+    &:focus {
+      background-color: #68b738;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -175,6 +179,7 @@
   border: 0;
   outline: 1px solid #e7e7e7;
   position: relative;
+  flex-grow: 1;
 
   &:focus {
     outline: 2px solid #444444;

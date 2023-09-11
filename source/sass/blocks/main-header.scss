@@ -32,15 +32,22 @@
       background-color: #68b738;
       position: absolute;
       content: "";
-      width: 720px;
+      width: 50%;
       height: 1216px;
       left: 50%;
       z-index: -1;
-      box-shadow: 700px 0 0 0 #68b738;
+      background-image: url("../img/green-cat@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0% 100%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/green-cat@2x.jpg");
+        background-repeat: no-repeat;
+        background-size: 145% 57%;
+      }
     }
   }
 }
-
 
 .main-header--line {
   position: relative;
@@ -129,7 +136,6 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 160px;
     margin-left: 0;
   }
 

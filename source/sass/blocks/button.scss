@@ -37,6 +37,10 @@
 .button--main-size {
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }
 
 .button--programm-select {
@@ -48,6 +52,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 200px;
+    margin-left: 78px;
   }
 }
 
@@ -55,6 +60,8 @@
   @media (min-width: $tablet-width) {
     width: 632px;
     grid-column: 1/-1;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -62,12 +69,6 @@
   @media (min-width: $desktop-width) {
     width: 244px;
     margin-left: auto;
-  }
-}
-
-.button--main-size {
-  @media (min-width: $desktop-width) {
-    width: 169px;
   }
 }
 

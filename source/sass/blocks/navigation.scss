@@ -6,12 +6,14 @@
   list-style-type: none;
   position: absolute;
   width: 320px;
-  right: -20px;
+  right: -50px;
   background-color: #ffffff;
-  top: 3px;
+  top: 32px;
   padding-left: 0;
   text-decoration: none;
-  display: none;
+  flex-wrap: wrap;
+  z-index: 2;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -36,9 +38,11 @@
 .navigation__item {
   padding-top: 22px;
   padding-bottom: 24px;
+  border-top: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    border-top: none;
   }
 }
 

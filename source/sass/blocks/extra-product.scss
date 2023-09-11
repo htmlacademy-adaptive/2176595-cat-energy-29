@@ -102,7 +102,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 164px;
+    margin-right: 140px;
     margin-bottom: 0;
   }
 }
@@ -184,9 +184,19 @@
 .extra-product__name {
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .extra-product__property {
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
