@@ -29,7 +29,7 @@
     color: #ffffff;
 
     &::after {
-      background-color: #68b738;
+      background-color: rgba(104, 183, 56, 0.85);
       position: absolute;
       content: "";
       width: 50%;
@@ -38,12 +38,12 @@
       z-index: -1;
       background-image: url("../img/green-cat@1x.jpg");
       background-repeat: no-repeat;
-      background-position: 0% 100%;
+      background-position: left bottom;
+      background-size: 1040px 700px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/green-cat@2x.jpg");
         background-repeat: no-repeat;
-        background-size: 145% 57%;
       }
     }
   }

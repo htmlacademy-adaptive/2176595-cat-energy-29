@@ -20,6 +20,7 @@
 
 .contacts__map-link {
   position: absolute;
+  bottom: 0;
 
   @media (min-width: $tablet-width) {
     bottom: 0;

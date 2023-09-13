@@ -147,7 +147,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr min-content;
     padding: 26px 38px 28px 38px;
     border-bottom: 1px solid #cdcdcd;
     width: 708px;
@@ -170,7 +170,7 @@
 
 .extra-product__wrapper {
   display: flex;
-  justify-content: space-between;
+  gap: 50px;
 }
 
 .extra-product__container {
@@ -178,6 +178,7 @@
     display: flex;
     align-items: flex-end;
     padding-bottom: 87px;
+    gap: 0;
   }
 }
 
@@ -198,5 +199,11 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+.extra-product__table {
+  @media (min-width: $tablet-width) {
+    width: 134px;
   }
 }

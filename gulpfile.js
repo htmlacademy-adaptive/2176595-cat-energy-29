@@ -3,7 +3,14 @@ import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
+import csso from 'postcss-csso';
+import rename from 'gulp-rename';
+import terser from 'gulp-terser';
+import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
+import del from 'del';
 import browser from 'browser-sync';
+
 
 // Styles
 
@@ -18,7 +25,62 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
-// Server
+
+// HTML
+
+const html = () => {
+  return gulp.src('source/*.html')
+  .pipe(gulp.dest('build'));
+  }
+
+// Scripts
+
+const scripts = () => {
+  return gulp.src('source/js/script.js')
+  .pipe(gulp.dest('build/js'))
+  .pipe(browser.stream());
+  }
+
+
+  //Svg
+
+const svg = () =>
+  gulp.src(['source/img/**/*.svg'])
+  .pipe(svgo({
+    plugins: [
+      'present-default',
+      'removeDimensions',
+      {
+        removeViewBox: false,
+      },
+      {
+        cleanipIDs: false,
+      }
+    ],
+  }))
+  .pipe(gulp.dest('build/img'));
+
+  // Copy
+
+const copy = (done) => {
+  gulp.src([
+  'source/fonts/*.{woff2,woff}',
+  'source/*.ico',
+  ], {
+  base: 'source'
+  })
+  .pipe(gulp.dest('build'))
+  done();
+  }
+
+  // Clean
+
+const clean = () => {
+  return del('build');
+  };
+
+
+  // Server
 
 const server = (done) => {
   browser.init({
@@ -32,14 +94,46 @@ const server = (done) => {
   done();
 }
 
+// Reload
+
+export const reload = (done) => {
+  browser.reload();
+  done();
+  }
+
 // Watcher
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 
+// Build
+
+export const build = gulp.series(
+  clean,
+  copy,
+  gulp.parallel(
+  styles,
+  html,
+  scripts,
+  svg,
+  ),
+  );
+
+  // Default
 export default gulp.series(
-  styles, server, watcher
-);
+  clean,
+  copy,
+  gulp.parallel(
+  styles,
+  html,
+  scripts,
+  svg,
+  ),
+  gulp.series(
+  server,
+  watcher
+  ));
