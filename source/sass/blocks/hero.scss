@@ -5,12 +5,17 @@
   align-items: center;
   width: 100%;
   padding-bottom: 20px;
+  background: linear-gradient(to bottom, #62a63a, #62a63a 302px, transparent 302px, transparent 100%);
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
     color: #000000;
     background: none;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
   }
 }
 
@@ -46,13 +51,15 @@
 
   @media (min-width: $desktop-width) {
     gap: 40px;
+    margin-bottom: -40px;
   }
 }
 
 .hero__image {
   position: absolute;
-  top: 221px;
+  top: 165px;
   z-index: 1;
+  left: 0;
 
   @media (min-width: $tablet-width) {
     top: 342px;
@@ -61,8 +68,8 @@
 
   @media (min-width: $desktop-width) {
     z-index: 1;
-    top: 127px;
-    left: 45.6%;
+    top: 24px;
+    left: 456px;
   }
 }
 
@@ -99,7 +106,7 @@
   font-weight: 400;
   margin: 0;
   width: 200px;
-  margin-bottom: 164px;
+  margin-bottom: 139px;
 
   @media (min-width: $tablet-width) {
     margin-right: auto;

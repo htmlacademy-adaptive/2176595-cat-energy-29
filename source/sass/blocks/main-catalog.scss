@@ -10,17 +10,6 @@
   margin-bottom: 41px;
   position: relative;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100vw;
-    height: 1px;
-    background-color: #ebebeb;
-    top: -27px;
-    left: -100vw;
-    box-shadow: 100vw 0 0 0 #ebebeb;
-  }
-
   @media (min-width: $tablet-width) {
     margin: 65px 0 165px 0;
     width: 450px;

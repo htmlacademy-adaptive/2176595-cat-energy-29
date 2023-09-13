@@ -297,14 +297,6 @@
     position: absolute;
     top: -105px;
     z-index: -1;
-
-    &:hover {
-      background-color: #68b738;
-    }
-
-    &:focus {
-      background-color: #5eaa2f;
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -333,6 +325,7 @@
     right: 50%;
     transform: translateX(55%);
     top: 12px;
+    background-color: #666666;
 
     &:hover {
       background-color: #68b738;

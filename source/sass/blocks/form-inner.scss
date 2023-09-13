@@ -121,10 +121,6 @@
     background-color: #000000;
     left: 247px;
     z-index: 2;
-
-    &:focus {
-      background-color: #68b738;
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -180,6 +176,16 @@
   position: relative;
   flex-grow: 1;
 
+  & input::-webkit-outer-spin-button,
+  & input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  & input::-webkit-contacts-auto-fill-button {
+    opacity: 0;
+  }
+
   &:focus {
     outline: 2px solid #444444;
   }
@@ -190,6 +196,7 @@
     line-height: 30px;
   }
 }
+
 
 .form-inner--comments {
   display: flex;

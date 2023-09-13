@@ -170,7 +170,11 @@
 
 .extra-product__wrapper {
   display: flex;
-  gap: 50px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    gap: 50px;
+  }
 }
 
 .extra-product__container {
@@ -204,6 +208,6 @@
 
 .extra-product__table {
   @media (min-width: $tablet-width) {
-    width: 134px;
+    width: max-content;
   }
 }

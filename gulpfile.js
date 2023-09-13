@@ -41,7 +41,6 @@ const scripts = () => {
   .pipe(browser.stream());
   }
 
-
   //Svg
 
 const svg = () =>
