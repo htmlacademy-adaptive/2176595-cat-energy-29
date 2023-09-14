@@ -10,7 +10,7 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
-
+import { stacksvg } from "gulp-stacksvg";
 
 // Styles
 
@@ -59,18 +59,13 @@ const svg = () =>
   }))
   .pipe(gulp.dest('build/img'));
 
-  // Sprite
+//Stack
 
-  const stack = () => {
-    return gulp.src('source/img/icons/*.svg')
-    .pipe(svgo())
-    .pipe(svgstore({
-    inlineSvg: true
-    }))
-    .pipe(rename('stack.svg'))
-    .pipe(gulp.dest('build/img'));
-    }
-
+const makeStack = () => {
+  return gulp.src('source/img/icons/*/.svg')
+    .pipe(stacksvg({output: 'stack'}))
+    .pipe(gulp.dest('build/img'))
+}
   // Copy
 
 const copy = (done) => {
@@ -130,8 +125,8 @@ export const build = gulp.series(
   styles,
   html,
   scripts,
-  stack,
   svg,
+  makeStack
   ),
   );
 
@@ -143,8 +138,8 @@ export default gulp.series(
   styles,
   html,
   scripts,
-  stack,
   svg,
+  makeStack
   ),
   gulp.series(
   server,
