@@ -1,0 +1,40 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.copyright__logo {
+  display: block;
+  width: 27px;
+  height: 34px;
+  mask-image: url("../img/stack.svg#copyright-logo");
+  background-color: #444444;
+
+  &:hover,
+  &:focus {
+    background-color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.25;
+  }
+}
+
+.copyright__wordmark {
+  font-family: "Lato", sans-serif;
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #444444;
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 116px;
+    margin-right: 23px;
+  }
+}
