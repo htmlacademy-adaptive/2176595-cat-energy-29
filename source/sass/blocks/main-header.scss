@@ -29,7 +29,7 @@
     color: #ffffff;
 
     &::after {
-      background-color: #62a63a;
+      background-color: #62a63b;
       position: absolute;
       content: "";
       width: 50%;
@@ -67,6 +67,13 @@
       display: none;
     }
   }
+}
+
+.main-header__container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .main-header__logo {
@@ -125,21 +132,5 @@
     margin-right: 538px;
     width: 118px;
     height: 21px;
-  }
-}
-
-.main-header__wordmark-link--footer {
-  width: 128px;
-  height: 24px;
-  margin: auto;
-  display: block;
-  margin-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 416px;
   }
 }

@@ -59,8 +59,28 @@
   margin: 0 auto;
 }
 
-.navigation--nojs .navigation-list {
-  display: flex;
+.navigation--nojs .navigation__toggle {
+  display: none;
+}
+
+.navigation--nojs .navigation__list {
+  display: contents;
+  list-style-type: none;
+  width: 320px;
+  right: -50px;
+  background-color: #ffffff;
+  top: 32px;
+  padding-left: 0;
+  text-decoration: none;
+  flex-wrap: wrap;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.navigation--nojs .main-header__container--nojs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content min-content;
 }
 
 .navigation__list {

@@ -102,22 +102,3 @@
     margin: 0;
   }
 }
-
-.form__container-button {
-  display: flex;
-  flex-direction: column;
-  gap: 21px;
-  margin-bottom: 32px;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    gap: 64px;
-    margin-bottom: 60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-    gap: 80px;
-    margin-bottom: 80px;
-  }
-}

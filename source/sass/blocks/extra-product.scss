@@ -1,4 +1,4 @@
-.extra-product {
+.extra-product__container {
   width: 280px;
   margin: 0 auto;
 
@@ -177,7 +177,7 @@
   }
 }
 
-.extra-product__container {
+.extra-product {
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: flex-end;

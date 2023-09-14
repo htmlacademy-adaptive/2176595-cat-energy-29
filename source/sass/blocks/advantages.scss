@@ -64,8 +64,9 @@
     gap: 0;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    column-gap: 73px;
     display: flex;
+    row-gap: 100px;
   }
 }
 

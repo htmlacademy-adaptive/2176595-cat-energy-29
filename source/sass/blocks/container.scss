@@ -10,19 +10,3 @@
     width: 1220px;
   }
 }
-
-.container--header {
-  width: 280px;
-  display: flex;
-  text-align: center;
-  margin: 0 auto;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-  }
-}

@@ -299,6 +299,18 @@
     z-index: -1;
   }
 
+  &:hover {
+    &::after {
+      background-color: #68b738;
+    }
+  }
+
+  &:active {
+    &::after {
+      background-color: rgb(104, 183, 56, 0.6);
+    }
+  }
+
   @media (min-width: $tablet-width) {
     &::after {
       height: 512px;
@@ -316,6 +328,22 @@
   position: relative;
   outline: 2px solid #666666;
 
+  &:hover {
+    outline: 2px solid #68b738;
+
+    &::after {
+      background-color: #68b738;
+    }
+  }
+
+  &:active {
+    outline: 2px solid rgb(104, 183, 56, 0.6);
+
+    &::after {
+      background-color: rgb(104, 183, 56, 0.6);
+    }
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -326,14 +354,6 @@
     transform: translateX(55%);
     top: 12px;
     background-color: #666666;
-
-    :hover {
-      background-color: #68b738;
-    }
-
-    &:active {
-      background-color: #5eaa2f;
-    }
   }
 
   @media (min-width: $tablet-width) {
