@@ -1,0 +1,21 @@
+.nutrition-programms {
+  color: #000000;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 74px 0 71px 0;
+    margin-bottom: 0;
+  }
+}
+
+.nutrition-programms__list {
+  padding: 0;
+}

@@ -1,0 +1,106 @@
+.button {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #69b838;
+  border: 0;
+  cursor: pointer;
+  width: 280px;
+  padding: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 249px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--main-size {
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
+}
+
+.button--programm-select {
+  @media (min-width: $tablet-width) {
+    margin-left: 90px;
+    margin-bottom: 526px;
+    padding: 14px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 200px;
+    margin-left: 78px;
+  }
+}
+
+.button--extra-product {
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    grid-column: 1/-1;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.button--extra-product-small {
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    margin-left: auto;
+  }
+}
+
+.button--extra {
+  background-color: #f2f2f2;
+  color: #444444;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
+}
+
+.button--extra:hover {
+  background-color: #ebebeb;
+}
+
+.button--extra:active {
+  color: rgba(68, 68, 68, 0.3);
+  background-color: #ebebeb;
+}
+
+.button--send {
+  @media (min-width: $tablet-width) {
+    width: 282px;
+    font-size: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
