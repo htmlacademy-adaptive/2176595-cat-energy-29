@@ -1,0 +1,29 @@
+.page__body {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0 auto;
+  min-width: 320px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+}
+/*
+.page__container {
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+  C
+  }
+}
+;*/

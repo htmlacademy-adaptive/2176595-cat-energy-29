@@ -1,0 +1,48 @@
+.main-footer {
+  background-color: #f2f2f2;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 54px;
+    padding-bottom: 66px;
+  }
+}
+
+.main-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-footer__wormark-link {
+  background-image: url("../img/stack.svg#cat-energy-logo-text");
+  width: 128px;
+  height: 24px;
+  margin: auto;
+  display: block;
+  margin-bottom: 20px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 416px;
+  }
+}
