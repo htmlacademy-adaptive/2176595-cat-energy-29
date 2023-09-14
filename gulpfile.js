@@ -21,7 +21,7 @@ export const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -70,7 +70,8 @@ const makeStack = () => {
 
 const copy = (done) => {
   gulp.src([
-  'source/fonts/*.{woff2,woff}',
+  'source/fonts/lato/*.{woff2,woff}',
+  'source/fonts/oswald/*.{woff2,woff}',
   'source/*.ico',
   ], {
   base: 'source'
@@ -78,6 +79,11 @@ const copy = (done) => {
   .pipe(gulp.dest('build'))
   done();
   }
+
+  const copyImages = () => {
+    return gulp.src('source/img/**/*.{png,jpg}')
+    .pipe(gulp.dest('build/img'))
+    }
 
   // Clean
 
@@ -91,7 +97,7 @@ const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -126,7 +132,8 @@ export const build = gulp.series(
   html,
   scripts,
   svg,
-  makeStack
+  makeStack,
+  copyImages
  ),
 );
 
@@ -139,7 +146,8 @@ export default gulp.series(
   html,
   scripts,
   svg,
-  makeStack
+  makeStack,
+  copyImages
   ),
   gulp.series(
   server,
