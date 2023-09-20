@@ -1,6 +1,6 @@
 .example {
   background-color: #eaeaea;
-  padding: 25px 20px 43px 20px;
+  padding: 25px 20px 35px 20px;
 
   @media (min-width: $tablet-width) {
     color: #000000;
@@ -23,7 +23,7 @@
 .example__title {
   color: #000000;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-basic);
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
@@ -63,7 +63,7 @@
 .example__description {
   list-style-type: none;
   color: #444444;
-  font-family: "Lato", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -135,7 +135,7 @@
     padding: 0;
     display: flex;
     justify-content: center;
-    margin-left: 137px;
+    margin-left: 121px;
   }
 
   @media (min-width: $desktop-width) {
@@ -148,7 +148,7 @@
 
 .example__name {
   color: #444444;
-  font-family: "Lato", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
@@ -157,7 +157,7 @@
   text-align: center;
   justify-content: center;
   margin: 0 auto;
-  margin-top: -14px;
+  margin-top: -8px;
   z-index: 2;
   background-color: #eaeaea;
 
@@ -176,7 +176,7 @@
 
 .example__value {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-basic);
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -231,6 +231,11 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     text-align: right;
+    margin-left: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -3px;
   }
 }
 
@@ -238,6 +243,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 224px;
+    margin-left: 0;
   }
 }
 
@@ -284,32 +290,8 @@
   position: absolute;
   content: "";
   left: 50%;
-  top: 40%;
+  top: 41%;
   transform: translateX(-50%);
-
-  &::after {
-    content: "";
-    width: 4px;
-    height: 256px;
-    background-color: #666666;
-    display: flex;
-    left: 19px;
-    position: absolute;
-    top: -105px;
-    z-index: -1;
-  }
-
-  &:hover {
-    &::after {
-      background-color: #68b738;
-    }
-  }
-
-  &:active {
-    &::after {
-      background-color: rgb(104, 183, 56, 0.6);
-    }
-  }
 
   @media (min-width: $tablet-width) {
     &::after {
@@ -323,23 +305,42 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 0;
   cursor: pointer;
   position: relative;
-  outline: 2px solid #666666;
+  border: 2px solid #666666;
 
   &:hover {
-    outline: 2px solid #68b738;
+    border: 2px solid #68b738;
 
     &::after {
+      background-color: #68b738;
+    }
+
+    &::before {
       background-color: #68b738;
     }
   }
 
   &:active {
-    outline: 2px solid rgb(104, 183, 56, 0.6);
+    border: 2px solid rgb(104, 183, 56, 0.6);
 
     &::after {
+      background-color: rgb(104, 183, 56, 0.6);
+    }
+
+    &::before {
+      background-color: rgb(104, 183, 56, 0.6);
+    }
+  }
+
+  &:focus {
+    border: 2px solid #68b738;
+
+    &::after {
+      background-color: rgb(104, 183, 56, 0.6);
+    }
+
+    &::before {
       background-color: rgb(104, 183, 56, 0.6);
     }
   }
@@ -352,11 +353,30 @@
     height: 18px;
     right: 50%;
     transform: translateX(55%);
-    top: 12px;
+    top: 8px;
     background-color: #666666;
+  }
+
+  &::before {
+    content: "";
+    width: 4px;
+    height: 256px;
+    background-color: #666666;
+    display: flex;
+    left: 16px;
+    position: absolute;
+    top: -111px;
+    z-index: -1;
   }
 
   @media (min-width: $tablet-width) {
     top: 24px;
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      height: 512px;
+      top: -236px;
+    }
   }
 }

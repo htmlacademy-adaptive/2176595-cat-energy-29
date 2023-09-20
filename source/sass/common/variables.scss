@@ -1,2 +1,9 @@
+$width-mobile: 320px;
+$width-mobile-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
+
+:root {
+  --font-basic: "Oswald", "Arial", sans-serif;
+  --font-secondary: "Lato", "Arial", sans-serif;
+}

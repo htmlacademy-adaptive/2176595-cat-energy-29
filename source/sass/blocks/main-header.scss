@@ -1,8 +1,7 @@
 .main-header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-basic);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -33,7 +32,7 @@
       position: absolute;
       content: "";
       width: 50%;
-      height: 1216px;
+      height: 1272px;
       left: 50%;
       z-index: -1;
       background-image: url("../img/green-cat@1x.jpg");
@@ -70,10 +69,16 @@
 }
 
 .main-header__container {
-  display: flex;
+  display: grid;
   text-align: center;
   align-items: center;
   margin: 0 auto;
+  grid-template-columns: min-content min-content 1fr;
+  row-gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-header__logo {

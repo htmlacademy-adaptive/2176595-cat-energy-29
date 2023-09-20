@@ -10,6 +10,10 @@
     gap: 60px;
     row-gap: 141px;
   }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 143px;
+  }
 }
 
 .main-product__item {
@@ -48,7 +52,7 @@
 
 .main-product__title {
   color: #222222;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-basic);
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -70,7 +74,7 @@
 
 .main-product__characteristic {
   color: #444444;
-  font-family: "Lato", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -94,7 +98,7 @@
 
 .main-product__extra-main {
   color: #111111;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-basic);
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -137,7 +141,7 @@
 
 .main-product__extra-taste {
   color: #444444;
-  font-family: "Lato", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -149,6 +153,7 @@
     line-height: 20px;
     margin-bottom: 82px;
     text-align: center;
+    width: 183px;
   }
 }
 
@@ -172,7 +177,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 161px 37px 40px 37px;
+    padding: 158px 37px 40px 37px;
     margin-bottom: 0;
     background-color: #ffffff;
     outline: 1px solid #f2f2f2;
@@ -180,6 +185,10 @@
     &::after {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 153px;
   }
 }
 
@@ -212,15 +221,27 @@
   }
 }
 
-.main-product__image {
+.main-product__image-link {
+  width: 140px;
+  height: 104px;
   position: absolute;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     top: -71px;
     right: 19%;
+    width: 200px;
+    height: 210px;
   }
 
   @media (min-width: $desktop-width) {
     right: 15%;
+    width: 169px;
+    height: 210px;
   }
+}
+
+.main-product__product-link {
+  text-decoration: none;
+  cursor: pointer;
 }
