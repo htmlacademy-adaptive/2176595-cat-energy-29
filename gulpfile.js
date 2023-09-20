@@ -134,7 +134,7 @@ export const build = gulp.series(
   svg,
   makeStack,
   copyImages
- ),
+  ),
 );
 
   // Default

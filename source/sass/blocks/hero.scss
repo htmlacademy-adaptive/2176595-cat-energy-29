@@ -30,6 +30,7 @@
   background-repeat: no-repeat;
   margin-bottom: 138px;
   position: relative;
+  background-position: 50%;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero-background@2x.jpg");
@@ -63,7 +64,7 @@
   left: 0;
 
   @media (min-width: $tablet-width) {
-    top: 342px;
+    top: 266px;
     z-index: -1;
   }
 
@@ -75,7 +76,7 @@
 }
 
 .hero__main-heading {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-basic);
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -100,7 +101,7 @@
 }
 
 .hero__slogan {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-basic);
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -119,15 +120,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 80px;
-    margin-bottom: 59px;
+    margin-left: 84px;
+    margin-bottom: 54px;
   }
 }
 
 .hero__link {
   color: #ffffff;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-basic);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -138,14 +139,14 @@
   width: 280px;
   padding: 10px 0;
   text-decoration: none;
-  display: flex;
   justify-content: center;
+  display: inline-block;
 
-  :hover {
+  &:hover {
     background-color: #5eaa2f;
   }
 
-  :active {
+  &:active {
     background-color: #5eaa2f;
     color: rgba(255, 255, 255, 0.3);
   }
@@ -163,7 +164,7 @@
     width: 249px;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 191px;
+    margin-bottom: 196px;
     margin-left: 77px;
   }
 }
