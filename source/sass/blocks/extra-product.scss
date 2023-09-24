@@ -173,7 +173,12 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    gap: 50px;
+    gap: 43px;
+    justify-content: normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 81px;
   }
 }
 
@@ -208,10 +213,28 @@
 
 .extra-product__table {
   @media (min-width: $tablet-width) {
-    width: max-content;
+    width: 166px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
   }
 }
 
 .extra-product__extra-link {
   cursor: pointer;
+}
+
+.extra-product__property-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 50px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
 }
